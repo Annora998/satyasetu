@@ -19,10 +19,18 @@ from sklearn.cluster import KMeans
 from sklearn.base import BaseEstimator, TransformerMixin
 import json
 import pickle
+import platform
 
 app = FastAPI(title="SatyaSetu API")
 
-pytesseract.pytesseract.tesseract_cmd = r'E:\SatyaSetu\tesseract.exe'
+# =====================================================================
+# CROSS-PLATFORM TESSERACT PATH (Windows + Linux)
+# =====================================================================
+if platform.system() == 'Windows':
+    pytesseract.pytesseract.tesseract_cmd = r'E:\SatyaSetu\tesseract.exe'
+else:
+    pytesseract.pytesseract.tesseract_cmd = '/usr/bin/tesseract'
+
 UPLOAD_DIR = "uploaded_images"
 os.makedirs(UPLOAD_DIR, exist_ok=True)
 
