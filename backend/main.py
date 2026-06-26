@@ -618,16 +618,16 @@ def analyze_scam(text, urls, qr_enrichments, visual_report):
             # Model makes the primary decision
             if scam_prob > 0.7:
                 score = int(70 + (scam_prob - 0.7) * 100)  # 70-100
-                reasons.append(f"🤖 ML Model: HIGH scam confidence ({scam_prob:.1%})")
+                reasons.append(f" ML Model: HIGH scam confidence ({scam_prob:.1%})")
             elif scam_prob > 0.5:
                 score = int(50 + (scam_prob - 0.5) * 100)  # 50-70
-                reasons.append(f"🤖 ML Model: Moderate scam confidence ({scam_prob:.1%})")
+                reasons.append(f" ML Model: Moderate scam confidence ({scam_prob:.1%})")
             elif scam_prob > 0.3:
                 score = int(30 + (scam_prob - 0.3) * 100)  # 30-50
-                reasons.append(f"🤖 ML Model: Uncertain ({scam_prob:.1%})")
+                reasons.append(f" ML Model: Uncertain ({scam_prob:.1%})")
             else:
                 score = int(scam_prob * 100)  # 0-30
-                reasons.append(f"🤖 ML Model: Likely legitimate ({1-scam_prob:.1%})")
+                reasons.append(f" ML Model: Likely legitimate ({1-scam_prob:.1%})")
             
         except Exception as e:
             reasons.append(f"⚠ ML Model error: {str(e)}")
@@ -644,7 +644,7 @@ def analyze_scam(text, urls, qr_enrichments, visual_report):
     auth = visual_report.get("authenticity_score", 100)
     if auth < 40:
         score = min(100, score + 10)
-        reasons.append(f"🚨 Low image authenticity ({auth}%)")
+        reasons.append(f" Low image authenticity ({auth}%)")
     elif auth >= 70:
         reasons.append(f"✓ High image authenticity ({auth}%)")
     
@@ -653,7 +653,7 @@ def analyze_scam(text, urls, qr_enrichments, visual_report):
         for qr in qr_enrichments:
             if qr["intent"] == "UPI_PAYMENT":
                 score = min(100, score + 20)
-                reasons.append("🚨 QR CODE IS A DIRECT UPI PAYMENT REQUEST!")
+                reasons.append(" QR CODE IS A DIRECT UPI PAYMENT REQUEST!")
                 category = "Malicious QR Scam"
     
     # URL analysis
@@ -711,31 +711,31 @@ def analyze_scam(text, urls, qr_enrichments, visual_report):
 
 def generate_recommendation(category, score):
     if score < 30:
-        return "✅ This message appears safe."
+        return " This message appears safe."
     elif score < 70:
         return "Exercise caution. Verify using the official app."
     else:
         recs = {
-            "QR": "🚨 EXTREME RISK: Malicious QR code. DO NOT SCAN.",
-            "KYC": "🚨 HIGH RISK: Banks never ask for KYC via SMS.",
-            "Fake Receipt": "🚨 HIGH RISK: FAKE RECEIPT. Legitimate receipts never ask for action.",
-            "E-Challan": "🚨 HIGH RISK: E-CHALLAN SCAM. Visit official police website.",
-            "Utility": "🚨 HIGH RISK: UTILITY SCAM. Contact official customer service.",
-            "Job": "🚨 HIGH RISK: JOB SCAM. Legitimate jobs don't ask for fees.",
-            "Lottery": "🚨 HIGH RISK: LOTTERY SCAM. You can't win what you didn't enter.",
-            "Courier": "🚨 HIGH RISK: Courier scam. Contact courier directly.",
-            "Government": "🚨 HIGH RISK: Government impersonation.",
-            "Banking": "🚨 HIGH RISK: Phishing attempt. Use official app.",
-            "Phishing": "🚨 HIGH RISK: Phishing attempt. Use official app.",
-            "Crypto": "🚨 HIGH RISK: Cryptocurrency scam. Never invest based on unsolicited messages.",
-            "Tech Support": "🚨 HIGH RISK: Tech support scam. Contact official support directly.",
-            "Romance": "🚨 HIGH RISK: Romance scam. Never send money to online contacts.",
-            "Fake Charity": "🚨 HIGH RISK: Fake charity scam. Verify before donating.",
+            "QR": " EXTREME RISK: Malicious QR code. DO NOT SCAN.",
+            "KYC": " HIGH RISK: Banks never ask for KYC via SMS.",
+            "Fake Receipt": " HIGH RISK: FAKE RECEIPT. Legitimate receipts never ask for action.",
+            "E-Challan": " HIGH RISK: E-CHALLAN SCAM. Visit official police website.",
+            "Utility": " HIGH RISK: UTILITY SCAM. Contact official customer service.",
+            "Job": " HIGH RISK: JOB SCAM. Legitimate jobs don't ask for fees.",
+            "Lottery": " HIGH RISK: LOTTERY SCAM. You can't win what you didn't enter.",
+            "Courier": " HIGH RISK: Courier scam. Contact courier directly.",
+            "Government": " HIGH RISK: Government impersonation.",
+            "Banking": " HIGH RISK: Phishing attempt. Use official app.",
+            "Phishing": " HIGH RISK: Phishing attempt. Use official app.",
+            "Crypto": " HIGH RISK: Cryptocurrency scam. Never invest based on unsolicited messages.",
+            "Tech Support": " HIGH RISK: Tech support scam. Contact official support directly.",
+            "Romance": " HIGH RISK: Romance scam. Never send money to online contacts.",
+            "Fake Charity": " HIGH RISK: Fake charity scam. Verify before donating.",
         }
         for key, rec in recs.items():
             if key in category:
                 return rec
-        return "🚨 HIGH RISK: Confirmed scam pattern."
+        return " HIGH RISK: Confirmed scam pattern."
 
 # =====================================================================
 # MAIN ENDPOINT
