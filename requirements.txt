@@ -4,8 +4,8 @@ python-multipart==0.0.6
 pytesseract==0.3.10
 Pillow==10.2.0
 opencv-python-headless==4.9.0.80
-scikit-learn==1.4.0
-numpy>=2.0.0
+scikit-learn==1.5.2
+numpy==2.0.2
 beautifulsoup4==4.12.3
 requests==2.31.0
 textblob==0.17.1
