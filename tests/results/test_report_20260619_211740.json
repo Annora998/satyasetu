@@ -1,0 +1,3378 @@
+{
+  "test_run": {
+    "timestamp": "2026-06-19T21:17:40.820706",
+    "api_url": "http://127.0.0.1:8000/upload/",
+    "scam_dataset_size": 90,
+    "legit_dataset_size": 60
+  },
+  "metrics": {
+    "total_tests": 150,
+    "successful_tests": 150,
+    "failed_tests": 0,
+    "scam_total": 90,
+    "scam_detected": 44,
+    "scam_missed": 46,
+    "scam_avg_score": 50.11,
+    "legit_total": 60,
+    "legit_correct": 60,
+    "legit_flagged": 0,
+    "legit_avg_score": 0.0,
+    "accuracy": 69.33,
+    "precision": 100.0,
+    "recall": 48.89,
+    "f1_score": 65.67,
+    "avg_processing_time": 1.97
+  },
+  "scam_results": [
+    {
+      "file": "comprehensive_scam_81.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (50.1% scam probability)",
+        "\u2713 High image authenticity (65%)"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [
+          "+91-9876543210"
+        ],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 3.7521677017211914
+    },
+    {
+      "file": "comprehensive_scam_82.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Likely Safe",
+      "risk_score": 10,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (54.3% scam probability)",
+        "\u2713 High image authenticity (65%)",
+        "\u2713 Contains a link"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [
+          "lucky-draw-w.in.in"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.53824782371521
+    },
+    {
+      "file": "comprehensive_scam_83.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (59.1% scam probability)",
+        "\u2713 High image authenticity (65%)"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3725874423980713
+    },
+    {
+      "file": "comprehensive_scam_84.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Phishing Scam",
+      "risk_score": 85,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (55.0% scam probability)",
+        "\u2713 High image authenticity (65%)",
+        "\u2713 Contains a link",
+        "\u2713 Suspicious URL pattern"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Phishing attempt. Use official app.",
+      "entities": {
+        "urls": [
+          "lottery-agent.xyz"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.84293270111084
+    },
+    {
+      "file": "comprehensive_scam_85.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Likely Safe",
+      "risk_score": 10,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (56.2% scam probability)",
+        "\u2713 High image authenticity (65%)",
+        "\u2713 Contains a link"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [
+          "mega-lottery.in"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.233813524246216
+    },
+    {
+      "file": "comprehensive_scam_86.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (56.2% scam probability)",
+        "\u2713 High image authenticity (65%)"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3159708976745605
+    },
+    {
+      "file": "comprehensive_scam_87.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Phishing Scam",
+      "risk_score": 85,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (58.3% scam probability)",
+        "\u2713 High image authenticity (65%)",
+        "\u2713 Contains a link",
+        "\u2713 Suspicious URL pattern",
+        "\u2713 Suspicious domain/Hosting keywords"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Phishing attempt. Use official app.",
+      "entities": {
+        "urls": [
+          "lottery-claim.xyz"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.789957284927368
+    },
+    {
+      "file": "comprehensive_scam_88.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Likely Safe",
+      "risk_score": 10,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (54.4% scam probability)",
+        "\u2713 High image authenticity (65%)",
+        "\u2713 Contains a link"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [
+          "car-lottery.in"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.1342413425445557
+    },
+    {
+      "file": "comprehensive_scam_89.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Likely Safe",
+      "risk_score": 20,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Moderate scam confidence (60.3%)",
+        "\u2713 High image authenticity (65%)"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3516466617584229
+    },
+    {
+      "file": "comprehensive_scam_90.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Phishing Scam",
+      "risk_score": 85,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (56.7% scam probability)",
+        "\u2713 High image authenticity (65%)",
+        "\u2713 Contains a link",
+        "\u2713 Suspicious URL pattern"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Phishing attempt. Use official app.",
+      "entities": {
+        "urls": [
+          "lottery-winner.xyz"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 3.415619373321533
+    },
+    {
+      "file": "comprehensive_scam_01.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Bank KYC Scam",
+      "risk_score": 100,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (58.9% scam probability)",
+        "\u2713 High image authenticity (65%)",
+        "\u2713 Contains a link",
+        "\u2713 Layer 2: Contains brand keyword ('hdfc') but NOT whitelisted",
+        "\u2713 Layer 2: High Entropy (Randomly generated domain string)",
+        "\u26a0 Cross-Check Mismatch: Text mentions ['hdfc'] but URL is 'hdfc-kyc-update.com'.",
+        "\u2713 Suspicious URL pattern",
+        "\u2713 Suspicious domain/Hosting keywords"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Banks never ask for KYC via SMS.",
+      "entities": {
+        "urls": [
+          "hdfc-kyc-update.com/verify"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.7109920978546143
+    },
+    {
+      "file": "comprehensive_scam_02.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Banking Scam",
+      "risk_score": 100,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (55.6% scam probability)",
+        "\u2713 High image authenticity (65%)",
+        "\u2713 Contains a link",
+        "\u2713 Layer 2: Contains brand keyword ('sbi') but NOT whitelisted",
+        "\u26a0 Cross-Check Mismatch: Text mentions ['sbi'] but URL is 'sbi-pan-update.in'.",
+        "\u2713 Suspicious URL pattern",
+        "\u2713 Suspicious domain/Hosting keywords"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Phishing attempt. Use official app.",
+      "entities": {
+        "urls": [
+          "sbi-pan-update.in/urgent"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.2263436317443848
+    },
+    {
+      "file": "comprehensive_scam_03.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Bank KYC Scam",
+      "risk_score": 100,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (54.6% scam probability)",
+        "\u2713 High image authenticity (65%)",
+        "\u2713 Contains a link",
+        "\u2713 Layer 2: Contains brand keyword ('icici') but NOT whitelisted",
+        "\u26a0 Cross-Check Mismatch: Text mentions ['icici'] but URL is 'icici-kyc-verify.com'.",
+        "\u2713 Suspicious URL pattern",
+        "\u2713 Suspicious domain/Hosting keywords"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Banks never ask for KYC via SMS.",
+      "entities": {
+        "urls": [
+          "icici-kyc-verify.com"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.6872334480285645
+    },
+    {
+      "file": "comprehensive_scam_04.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Bank KYC Scam",
+      "risk_score": 98,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Moderate scam confidence (63.7%)",
+        "\u2713 High image authenticity (65%)",
+        "\u2713 Contains a link",
+        "\u2713 Layer 2: High Entropy (Randomly generated domain string)",
+        "\u2713 Suspicious URL pattern",
+        "\u2713 Suspicious domain/Hosting keywords"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Banks never ask for KYC via SMS.",
+      "entities": {
+        "urls": [
+          "kyc-update-urgent.in"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.314462184906006
+    },
+    {
+      "file": "comprehensive_scam_05.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Bank KYC Scam",
+      "risk_score": 85,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (59.1% scam probability)",
+        "\u2713 High image authenticity (65%)",
+        "\u2713 Contains a link",
+        "\u2713 Layer 2: High Entropy (Randomly generated domain string)",
+        "\u2713 Suspicious URL pattern",
+        "\u2713 Suspicious domain/Hosting keywords"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Banks never ask for KYC via SMS.",
+      "entities": {
+        "urls": [
+          "bank-kyc-verify.net/complete"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.9606306552886963
+    },
+    {
+      "file": "comprehensive_scam_06.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Bank KYC Scam",
+      "risk_score": 85,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (59.2% scam probability)",
+        "\u2713 High image authenticity (65%)",
+        "\u2713 Contains a link",
+        "\u2713 Layer 2: High Entropy (Randomly generated domain string)",
+        "\u2713 Suspicious URL pattern",
+        "\u2713 Suspicious domain/Hosting keywords"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Banks never ask for KYC via SMS.",
+      "entities": {
+        "urls": [
+          "rbi-kyc-mandate.com/update"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 3.485384702682495
+    },
+    {
+      "file": "comprehensive_scam_07.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Bank KYC Scam",
+      "risk_score": 85,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Moderate scam confidence (62.7%)",
+        "\u2713 High image authenticity (65%)",
+        "\u2713 Contains a link",
+        "\u2713 Suspicious URL pattern",
+        "\u2713 Suspicious domain/Hosting keywords"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Banks never ask for KYC via SMS.",
+      "entities": {
+        "urls": [
+          "pan-kyc-update.xyz"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.854905128479004
+    },
+    {
+      "file": "comprehensive_scam_08.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Likely Safe",
+      "risk_score": 20,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (59.3% scam probability)",
+        "\u2713 High image authenticity (65%)",
+        "\u2713 Contains a link",
+        "\u2713 Suspicious domain/Hosting keywords"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [
+          "kyc-reminder.in"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.505701780319214
+    },
+    {
+      "file": "comprehensive_scam_09.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Bank KYC Scam",
+      "risk_score": 85,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (55.7% scam probability)",
+        "\u2713 High image authenticity (65%)",
+        "\u2713 Contains a link",
+        "\u2713 Layer 2: High Entropy (Randomly generated domain string)",
+        "\u2713 Suspicious URL pattern",
+        "\u2713 Suspicious domain/Hosting keywords"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Banks never ask for KYC via SMS.",
+      "entities": {
+        "urls": [
+          "kyc-resubmit.cc/upload"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.7421817779541016
+    },
+    {
+      "file": "comprehensive_scam_10.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Bank KYC Scam",
+      "risk_score": 40,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Moderate scam confidence (60.2%)",
+        "\u2713 High image authenticity (65%)",
+        "\u2713 Contains a link",
+        "\u2713 Suspicious domain/Hosting keywords"
+      ],
+      "recommendation": "Exercise caution. Verify using the official app.",
+      "entities": {
+        "urls": [
+          "final-kyc-notice.com"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.7160778045654297
+    },
+    {
+      "file": "comprehensive_scam_11.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Banking Scam",
+      "risk_score": 100,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (47.6% scam probability)",
+        "\u2713 High image authenticity (65%)",
+        "\u2713 Contains a link",
+        "\u2713 Layer 2: Contains brand keyword ('sbi') but NOT whitelisted",
+        "\u26a0 Cross-Check Mismatch: Text mentions ['sbi'] but URL is 'sbi-secure-log.in.net'.",
+        "\u2713 Suspicious URL pattern",
+        "\u2713 Suspicious domain/Hosting keywords"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Phishing attempt. Use official app.",
+      "entities": {
+        "urls": [
+          "sbi-secure-log.in.net/check"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.675727367401123
+    },
+    {
+      "file": "comprehensive_scam_12.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Banking Scam",
+      "risk_score": 100,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (50.1% scam probability)",
+        "\u2713 High image authenticity (65%)",
+        "\u2713 Contains a link",
+        "\u2713 Layer 2: Contains brand keyword ('icici') but NOT whitelisted",
+        "\u26a0 Cross-Check Mismatch: Text mentions ['icici'] but URL is 'icici-verify.com'.",
+        "\u2713 Suspicious URL pattern",
+        "\u2713 Suspicious domain/Hosting keywords"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Phishing attempt. Use official app.",
+      "entities": {
+        "urls": [
+          "icici-verify.com/og.in"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.563039779663086
+    },
+    {
+      "file": "comprehensive_scam_13.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Banking Scam",
+      "risk_score": 74,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Moderate legitimate confidence (72.8%)",
+        "\u2713 High image authenticity (65%)",
+        "\u2713 Contains a link",
+        "\u2713 Layer 2: Contains brand keyword ('hdfc') but NOT whitelisted",
+        "\u2713 Layer 2: High Entropy (Randomly generated domain string)",
+        "\u26a0 Cross-Check Mismatch: Text mentions ['hdfc'] but URL is 'hdfc-statement-view.com'."
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Phishing attempt. Use official app.",
+      "entities": {
+        "urls": [
+          "hdfc-statement-view.com/log.in"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.7372405529022217
+    },
+    {
+      "file": "comprehensive_scam_14.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Banking Scam",
+      "risk_score": 100,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (45.2% scam probability)",
+        "\u2713 High image authenticity (65%)",
+        "\u2713 Contains a link",
+        "\u2713 Layer 2: Contains brand keyword ('axis') but NOT whitelisted",
+        "\u2713 Layer 2: High Entropy (Randomly generated domain string)",
+        "\u26a0 Cross-Check Mismatch: Text mentions ['axis'] but URL is 'axis-otp-verify.net'.",
+        "\u2713 Suspicious URL pattern",
+        "\u2713 Suspicious domain/Hosting keywords"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Phishing attempt. Use official app.",
+      "entities": {
+        "urls": [
+          "axis-otp-verify.net"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.579878330230713
+    },
+    {
+      "file": "comprehensive_scam_15.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Banking Scam",
+      "risk_score": 100,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (51.6% scam probability)",
+        "\u2713 High image authenticity (65%)",
+        "\u2713 Contains a link",
+        "\u2713 Layer 2: Contains brand keyword ('hdfc') but NOT whitelisted",
+        "\u26a0 Cross-Check Mismatch: Text mentions ['hdfc'] but URL is 'hdfc-secure.net'.",
+        "\u2713 Suspicious URL pattern",
+        "\u2713 Suspicious domain/Hosting keywords"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Phishing attempt. Use official app.",
+      "entities": {
+        "urls": [
+          "hdfc-secure.net/verify"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 5.424241781234741
+    },
+    {
+      "file": "comprehensive_scam_16.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Banking Scam",
+      "risk_score": 65,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (47.0% scam probability)",
+        "\u2713 High image authenticity (65%)",
+        "\u2713 Contains a link",
+        "\u2713 Layer 2: Contains brand keyword ('icici') but NOT whitelisted",
+        "\u26a0 Cross-Check Mismatch: Text mentions ['icici'] but URL is 'icici-reactivate.com'."
+      ],
+      "recommendation": "Exercise caution. Verify using the official app.",
+      "entities": {
+        "urls": [
+          "icici-reactivate.com/og.in"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.6693241596221924
+    },
+    {
+      "file": "comprehensive_scam_17.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Banking Scam",
+      "risk_score": 100,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (55.5% scam probability)",
+        "\u2713 High image authenticity (65%)",
+        "\u2713 Contains a link",
+        "\u2713 Layer 2: Contains brand keyword ('sbi') but NOT whitelisted",
+        "\u26a0 Cross-Check Mismatch: Text mentions ['sbi'] but URL is 'sbi-update.net'.",
+        "\u2713 Suspicious URL pattern",
+        "\u2713 Suspicious domain/Hosting keywords"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Phishing attempt. Use official app.",
+      "entities": {
+        "urls": [
+          "sbi-update.net/verify"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.524218797683716
+    },
+    {
+      "file": "comprehensive_scam_18.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Banking Scam",
+      "risk_score": 100,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (44.5% scam probability)",
+        "\u2713 High image authenticity (65%)",
+        "\u2713 Contains a link",
+        "\u2713 Layer 2: Contains brand keyword ('hdfc') but NOT whitelisted",
+        "\u26a0 Cross-Check Mismatch: Text mentions ['hdfc'] but URL is 'hdfc-card-verify.com'.",
+        "\u2713 Suspicious URL pattern",
+        "\u2713 Suspicious domain/Hosting keywords"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Phishing attempt. Use official app.",
+      "entities": {
+        "urls": [
+          "hdfc-card-verify.com"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.6794657707214355
+    },
+    {
+      "file": "comprehensive_scam_19.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Banking Scam",
+      "risk_score": 65,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (48.6% scam probability)",
+        "\u2713 High image authenticity (65%)",
+        "\u2713 Contains a link",
+        "\u2713 Layer 2: Contains brand keyword ('axis') but NOT whitelisted",
+        "\u26a0 Cross-Check Mismatch: Text mentions ['axis'] but URL is 'axis-unlock.net'."
+      ],
+      "recommendation": "Exercise caution. Verify using the official app.",
+      "entities": {
+        "urls": [
+          "axis-unlock.net"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.6149260997772217
+    },
+    {
+      "file": "comprehensive_scam_20.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Banking Scam",
+      "risk_score": 85,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (50.3% scam probability)",
+        "\u2713 High image authenticity (65%)",
+        "\u2713 Contains a link",
+        "\u2713 Suspicious URL pattern",
+        "\u2713 Suspicious domain/Hosting keywords"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Phishing attempt. Use official app.",
+      "entities": {
+        "urls": [
+          "bank-verify.in"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.1853280067443848
+    },
+    {
+      "file": "comprehensive_scam_21.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Likely Safe",
+      "risk_score": 10,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (59.9% scam probability)",
+        "\u2713 High image authenticity (65%)",
+        "\u2713 Contains a link"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [
+          "customs-duty.cc/pay"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.4421029090881348
+    },
+    {
+      "file": "comprehensive_scam_22.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Courier Scam",
+      "risk_score": 30,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Moderate scam confidence (60.7%)",
+        "\u2713 High image authenticity (65%)",
+        "\u2713 Contains a link"
+      ],
+      "recommendation": "Exercise caution. Verify using the official app.",
+      "entities": {
+        "urls": [
+          "fedex-customs.cc/pay"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.531575918197632
+    },
+    {
+      "file": "comprehensive_scam_23.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Likely Safe",
+      "risk_score": 10,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (59.2% scam probability)",
+        "\u2713 High image authenticity (65%)",
+        "\u2713 Contains a link"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [
+          "customs-hold.in/pay"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.245255708694458
+    },
+    {
+      "file": "comprehensive_scam_24.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (56.8% scam probability)",
+        "\u2713 High image authenticity (65%)"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3260297775268555
+    },
+    {
+      "file": "comprehensive_scam_25.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Courier Scam",
+      "risk_score": 35,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (56.8% scam probability)",
+        "\u2713 High image authenticity (65%)",
+        "\u2713 Contains a link",
+        "\u2713 Layer 2: High Entropy (Randomly generated domain string)"
+      ],
+      "recommendation": "Exercise caution. Verify using the official app.",
+      "entities": {
+        "urls": [
+          "bluedart-customs.net"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.7041420936584473
+    },
+    {
+      "file": "comprehensive_scam_26.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Phishing Scam",
+      "risk_score": 85,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (58.8% scam probability)",
+        "\u2713 High image authenticity (65%)",
+        "\u2713 Contains a link",
+        "\u2713 Layer 2: High Entropy (Randomly generated domain string)",
+        "\u2713 Suspicious URL pattern"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Phishing attempt. Use official app.",
+      "entities": {
+        "urls": [
+          "indiapost-cusfoms.xyz"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.3202836513519287
+    },
+    {
+      "file": "comprehensive_scam_27.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Courier Scam",
+      "risk_score": 85,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (57.3% scam probability)",
+        "\u2713 High image authenticity (65%)",
+        "\u2713 Contains a link",
+        "\u2713 Suspicious URL pattern"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Courier scam. Contact courier directly.",
+      "entities": {
+        "urls": [
+          "courier-stuck.cc/clear"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.7684197425842285
+    },
+    {
+      "file": "comprehensive_scam_28.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Courier Scam",
+      "risk_score": 31,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Moderate scam confidence (61.1%)",
+        "\u2713 High image authenticity (65%)",
+        "\u2713 Contains a link"
+      ],
+      "recommendation": "Exercise caution. Verify using the official app.",
+      "entities": {
+        "urls": [
+          "customs-notice.in/pay"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.3950188159942627
+    },
+    {
+      "file": "comprehensive_scam_29.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (54.6% scam probability)",
+        "\u2713 High image authenticity (65%)"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3105099201202393
+    },
+    {
+      "file": "comprehensive_scam_30.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Phishing Scam",
+      "risk_score": 85,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (58.4% scam probability)",
+        "\u2713 High image authenticity (65%)",
+        "\u2713 Contains a link",
+        "\u2713 Suspicious URL pattern"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Phishing attempt. Use official app.",
+      "entities": {
+        "urls": [
+          "dtdc-clear.xyz"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.7642033100128174
+    },
+    {
+      "file": "comprehensive_scam_31.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Phishing Scam",
+      "risk_score": 100,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (55.7% scam probability)",
+        "\u2713 High image authenticity (65%)",
+        "\u2713 Contains a link",
+        "\u2713 Layer 2: Contains brand keyword ('paytm') but NOT whitelisted",
+        "\u26a0 Cross-Check Mismatch: Text mentions ['paytm'] but URL is 'paytm-reward.xyz'.",
+        "\u2713 Suspicious URL pattern",
+        "\u2713 Suspicious domain/Hosting keywords"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Phishing attempt. Use official app.",
+      "entities": {
+        "urls": [
+          "paytm-reward.xyz/claim"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.6930463314056396
+    },
+    {
+      "file": "comprehensive_scam_32.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Phishing Scam",
+      "risk_score": 95,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (48.6% scam probability)",
+        "\u2713 High image authenticity (65%)",
+        "\u2713 Contains a link",
+        "\u2713 Layer 2: Contains brand keyword ('phonepe') but NOT whitelisted",
+        "\u26a0 Cross-Check Mismatch: Text mentions ['phonepe'] but URL is 'phonepe-cashback.xyz'.",
+        "\u2713 Suspicious URL pattern"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Phishing attempt. Use official app.",
+      "entities": {
+        "urls": [
+          "phonepe-cashback.xyz"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.7801883220672607
+    },
+    {
+      "file": "comprehensive_scam_33.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Phishing Scam",
+      "risk_score": 100,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (56.6% scam probability)",
+        "\u2713 High image authenticity (65%)",
+        "\u2713 Contains a link",
+        "\u2713 Layer 2: Contains brand keyword ('amazon') but NOT whitelisted",
+        "\u26a0 Cross-Check Mismatch: Text mentions ['amazon'] but URL is 'amazon-reward.xyz'.",
+        "\u2713 Suspicious URL pattern",
+        "\u2713 Suspicious domain/Hosting keywords"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Phishing attempt. Use official app.",
+      "entities": {
+        "urls": [
+          "amazon-reward.xyz/claim"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.758349657058716
+    },
+    {
+      "file": "comprehensive_scam_34.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Phishing Scam",
+      "risk_score": 85,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (55.1% scam probability)",
+        "\u2713 High image authenticity (65%)",
+        "\u2713 Contains a link",
+        "\u2713 Layer 2: Contains brand keyword ('flipkart') but NOT whitelisted",
+        "\u2713 Suspicious URL pattern"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Phishing attempt. Use official app.",
+      "entities": {
+        "urls": [
+          "flipkart-gift.xyz"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.649702548980713
+    },
+    {
+      "file": "comprehensive_scam_35.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (56.2% scam probability)",
+        "\u2713 High image authenticity (65%)"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.313549518585205
+    },
+    {
+      "file": "comprehensive_scam_36.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (43.1% scam probability)",
+        "\u2713 High image authenticity (65%)"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.148468255996704
+    },
+    {
+      "file": "comprehensive_scam_37.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (46.3% scam probability)",
+        "\u2713 High image authenticity (65%)"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.4233283996582031
+    },
+    {
+      "file": "comprehensive_scam_38.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (46.2% scam probability)",
+        "\u2713 High image authenticity (65%)"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.4263279438018799
+    },
+    {
+      "file": "comprehensive_scam_39.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (56.2% scam probability)",
+        "\u2713 High image authenticity (65%)"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.8462865352630615
+    },
+    {
+      "file": "comprehensive_scam_40.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (45.9% scam probability)",
+        "\u2713 High image authenticity (65%)"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.385937213897705
+    },
+    {
+      "file": "comprehensive_scam_41.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Government Scam",
+      "risk_score": 85,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (52.6% scam probability)",
+        "\u2713 High image authenticity (65%)",
+        "\u2713 Contains a link",
+        "\u2713 Layer 2: High Entropy (Randomly generated domain string)",
+        "\u2713 Suspicious URL pattern",
+        "\u2713 Suspicious domain/Hosting keywords"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Government impersonation.",
+      "entities": {
+        "urls": [
+          "incometax-refund.ce/claim"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.4597790241241455
+    },
+    {
+      "file": "comprehensive_scam_42.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Government Scam",
+      "risk_score": 85,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (58.0% scam probability)",
+        "\u2713 High image authenticity (65%)",
+        "\u2713 Contains a link",
+        "\u2713 Suspicious URL pattern",
+        "\u2713 Suspicious domain/Hosting keywords"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Government impersonation.",
+      "entities": {
+        "urls": [
+          "epfo-claim.in/verify"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.5780673027038574
+    },
+    {
+      "file": "comprehensive_scam_43.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Phishing Scam",
+      "risk_score": 85,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (57.4% scam probability)",
+        "\u2713 High image authenticity (65%)",
+        "\u2713 Contains a link",
+        "\u2713 Suspicious URL pattern",
+        "\u2713 Suspicious domain/Hosting keywords"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Phishing attempt. Use official app.",
+      "entities": {
+        "urls": [
+          "pan-link-update.com/urgent"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.500235080718994
+    },
+    {
+      "file": "comprehensive_scam_44.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Phishing Scam",
+      "risk_score": 85,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (59.6% scam probability)",
+        "\u2713 High image authenticity (65%)",
+        "\u2713 Contains a link",
+        "\u2713 Suspicious URL pattern",
+        "\u2713 Suspicious domain/Hosting keywords"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Phishing attempt. Use official app.",
+      "entities": {
+        "urls": [
+          "pan-update.xyz"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.7399280071258545
+    },
+    {
+      "file": "comprehensive_scam_45.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (55.1% scam probability)",
+        "\u2713 High image authenticity (65%)"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3046646118164062
+    },
+    {
+      "file": "comprehensive_scam_46.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Government Scam",
+      "risk_score": 85,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (55.9% scam probability)",
+        "\u2713 High image authenticity (65%)",
+        "\u2713 Contains a link",
+        "\u2713 Layer 2: High Entropy (Randomly generated domain string)",
+        "\u2713 Suspicious URL pattern",
+        "\u2713 Suspicious domain/Hosting keywords"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Government impersonation.",
+      "entities": {
+        "urls": [
+          "uan-verify-epfo.in"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.2866058349609375
+    },
+    {
+      "file": "comprehensive_scam_47.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Government Scam",
+      "risk_score": 85,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (57.6% scam probability)",
+        "\u2713 High image authenticity (65%)",
+        "\u2713 Contains a link",
+        "\u2713 Layer 2: High Entropy (Randomly generated domain string)",
+        "\u2713 Suspicious URL pattern",
+        "\u2713 Suspicious domain/Hosting keywords"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Government impersonation.",
+      "entities": {
+        "urls": [
+          "govt-subsidy-claim.xyz"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.654205322265625
+    },
+    {
+      "file": "comprehensive_scam_48.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Phishing Scam",
+      "risk_score": 85,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (57.8% scam probability)",
+        "\u2713 High image authenticity (65%)",
+        "\u2713 Contains a link",
+        "\u2713 Layer 2: High Entropy (Randomly generated domain string)",
+        "\u2713 Suspicious URL pattern",
+        "\u2713 Suspicious domain/Hosting keywords"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Phishing attempt. Use official app.",
+      "entities": {
+        "urls": [
+          "aadhaar-verify-urgent.in"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.731029748916626
+    },
+    {
+      "file": "comprehensive_scam_49.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (53.8% scam probability)",
+        "\u2713 High image authenticity (65%)"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 0.7738790512084961
+    },
+    {
+      "file": "comprehensive_scam_50.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Phishing Scam",
+      "risk_score": 85,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (59.2% scam probability)",
+        "\u2713 High image authenticity (65%)",
+        "\u2713 Contains a link",
+        "\u2713 Suspicious URL pattern",
+        "\u2713 Suspicious domain/Hosting keywords"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Phishing attempt. Use official app.",
+      "entities": {
+        "urls": [
+          "voter-id-verify.xyz"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.0162243843078613
+    },
+    {
+      "file": "comprehensive_scam_51.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Likely Safe",
+      "risk_score": 22,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Moderate scam confidence (62.2%)",
+        "\u2713 High image authenticity (65%)"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.2968990802764893
+    },
+    {
+      "file": "comprehensive_scam_52.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Likely Safe",
+      "risk_score": 10,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (55.8% scam probability)",
+        "\u2713 High image authenticity (65%)",
+        "\u2713 Contains a link"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [
+          "traffic-challan.in/pay"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.2638304233551025
+    },
+    {
+      "file": "comprehensive_scam_53.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (60.0% scam probability)",
+        "\u2713 High image authenticity (65%)"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.0676863193511963
+    },
+    {
+      "file": "comprehensive_scam_54.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Phishing Scam",
+      "risk_score": 85,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Moderate scam confidence (61.4%)",
+        "\u2713 High image authenticity (65%)",
+        "\u2713 Contains a link",
+        "\u2713 Suspicious URL pattern"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Phishing attempt. Use official app.",
+      "entities": {
+        "urls": [
+          "rto-fine-notice.xyz"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.9572489261627197
+    },
+    {
+      "file": "comprehensive_scam_55.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Likely Safe",
+      "risk_score": 10,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (51.7% scam probability)",
+        "\u2713 High image authenticity (65%)",
+        "\u2713 Contains a link"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [
+          "e-challan-helmet.in"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.4284565448760986
+    },
+    {
+      "file": "comprehensive_scam_56.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (58.7% scam probability)",
+        "\u2713 High image authenticity (65%)"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.456773042678833
+    },
+    {
+      "file": "comprehensive_scam_57.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Phishing Scam",
+      "risk_score": 85,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (57.8% scam probability)",
+        "\u2713 High image authenticity (65%)",
+        "\u2713 Contains a link",
+        "\u2713 Suspicious URL pattern"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Phishing attempt. Use official app.",
+      "entities": {
+        "urls": [
+          "mumbai-traffic.xyz"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.913356304168701
+    },
+    {
+      "file": "comprehensive_scam_58.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Likely Safe",
+      "risk_score": 10,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (55.9% scam probability)",
+        "\u2713 High image authenticity (65%)",
+        "\u2713 Contains a link"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [
+          "di-suspended.in"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.25309681892395
+    },
+    {
+      "file": "comprehensive_scam_59.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Likely Safe",
+      "risk_score": 10,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (57.2% scam probability)",
+        "\u2713 High image authenticity (65%)",
+        "\u2713 Contains a link"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [
+          "rc-renewal.cc/pay"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.5689713954925537
+    },
+    {
+      "file": "comprehensive_scam_60.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Phishing Scam",
+      "risk_score": 85,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (54.7% scam probability)",
+        "\u2713 High image authenticity (65%)",
+        "\u2713 Contains a link",
+        "\u2713 Suspicious URL pattern"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Phishing attempt. Use official app.",
+      "entities": {
+        "urls": [
+          "parking-challan.xyz"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.9120450019836426
+    },
+    {
+      "file": "comprehensive_scam_61.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (54.9% scam probability)",
+        "\u2713 High image authenticity (65%)"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3054006099700928
+    },
+    {
+      "file": "comprehensive_scam_62.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Likely Safe",
+      "risk_score": 10,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (56.5% scam probability)",
+        "\u2713 High image authenticity (65%)",
+        "\u2713 Contains a link"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [
+          "power-cut-notice.in"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.0241451263427734
+    },
+    {
+      "file": "comprehensive_scam_63.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Phishing Scam",
+      "risk_score": 85,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (54.8% scam probability)",
+        "\u2713 High image authenticity (65%)",
+        "\u2713 Contains a link",
+        "\u2713 Suspicious URL pattern"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Phishing attempt. Use official app.",
+      "entities": {
+        "urls": [
+          "electricity-disconnect.xyz"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.741730213165283
+    },
+    {
+      "file": "comprehensive_scam_64.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (55.3% scam probability)",
+        "\u2713 High image authenticity (65%)"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.302196741104126
+    },
+    {
+      "file": "comprehensive_scam_65.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Likely Safe",
+      "risk_score": 10,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (57.2% scam probability)",
+        "\u2713 High image authenticity (65%)",
+        "\u2713 Contains a link"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [
+          "water-bill-urgent.in"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.3791282176971436
+    },
+    {
+      "file": "comprehensive_scam_66.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (50.7% scam probability)",
+        "\u2713 High image authenticity (65%)"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.310535192489624
+    },
+    {
+      "file": "comprehensive_scam_67.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Phishing Scam",
+      "risk_score": 85,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (55.7% scam probability)",
+        "\u2713 High image authenticity (65%)",
+        "\u2713 Contains a link",
+        "\u2713 Suspicious URL pattern"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Phishing attempt. Use official app.",
+      "entities": {
+        "urls": [
+          "mtnl-broadbill.xyz"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.884719133377075
+    },
+    {
+      "file": "comprehensive_scam_68.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Unknown",
+      "risk_score": 35,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (49.2% scam probability)",
+        "\u2713 High image authenticity (65%)",
+        "\u2713 Contains a link",
+        "\u2713 Layer 2: High Entropy (Randomly generated domain string)"
+      ],
+      "recommendation": "Exercise caution. Verify using the official app.",
+      "entities": {
+        "urls": [
+          "mobile-recharge-urgent.in"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.0568912029266357
+    },
+    {
+      "file": "comprehensive_scam_69.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Likely Safe",
+      "risk_score": 10,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (57.2% scam probability)",
+        "\u2713 High image authenticity (65%)",
+        "\u2713 Contains a link"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [
+          "dth-blocked.cc/pay"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.3780477046966553
+    },
+    {
+      "file": "comprehensive_scam_70.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Phishing Scam",
+      "risk_score": 85,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (57.2% scam probability)",
+        "\u2713 High image authenticity (65%)",
+        "\u2713 Contains a link",
+        "\u2713 Suspicious URL pattern"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Phishing attempt. Use official app.",
+      "entities": {
+        "urls": [
+          "gas-suspended.xyz"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.6662144660949707
+    },
+    {
+      "file": "comprehensive_scam_71.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Phishing Scam",
+      "risk_score": 85,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (50.2% scam probability)",
+        "\u2713 High image authenticity (65%)",
+        "\u2713 Contains a link",
+        "\u2713 Suspicious URL pattern"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Phishing attempt. Use official app.",
+      "entities": {
+        "urls": [
+          "wfh-job.xyz"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.5363595485687256
+    },
+    {
+      "file": "comprehensive_scam_72.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (58.4% scam probability)",
+        "\u2713 High image authenticity (65%)"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.2943627834320068
+    },
+    {
+      "file": "comprehensive_scam_73.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Likely Safe",
+      "risk_score": 10,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (52.3% scam probability)",
+        "\u2713 High image authenticity (65%)",
+        "\u2713 Contains a link"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [
+          "partti.me-job.in"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.2354774475097656
+    },
+    {
+      "file": "comprehensive_scam_74.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Phishing Scam",
+      "risk_score": 85,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (52.9% scam probability)",
+        "\u2713 High image authenticity (65%)",
+        "\u2713 Contains a link",
+        "\u2713 Layer 2: High Entropy (Randomly generated domain string)",
+        "\u2713 Suspicious URL pattern"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Phishing attempt. Use official app.",
+      "entities": {
+        "urls": [
+          "typing-job-urgent.xyz"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.4208383560180664
+    },
+    {
+      "file": "comprehensive_scam_75.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (55.7% scam probability)",
+        "\u2713 High image authenticity (65%)"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3061754703521729
+    },
+    {
+      "file": "comprehensive_scam_76.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Unknown",
+      "risk_score": 65,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (55.6% scam probability)",
+        "\u2713 High image authenticity (65%)",
+        "\u2713 Contains a link",
+        "\u2713 Layer 2: Contains brand keyword ('flipkart') but NOT whitelisted",
+        "\u2713 Layer 2: High Entropy (Randomly generated domain string)"
+      ],
+      "recommendation": "Exercise caution. Verify using the official app.",
+      "entities": {
+        "urls": [
+          "flipkart-job-scam.in"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.610886812210083
+    },
+    {
+      "file": "comprehensive_scam_77.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Government Scam",
+      "risk_score": 85,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (54.2% scam probability)",
+        "\u2713 High image authenticity (65%)",
+        "\u2713 Contains a link",
+        "\u2713 Suspicious URL pattern"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Government impersonation.",
+      "entities": {
+        "urls": [
+          "govt-job-fake.xyz"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.7648231983184814
+    },
+    {
+      "file": "comprehensive_scam_78.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (58.0% scam probability)",
+        "\u2713 High image authenticity (65%)"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.7339394092559814
+    },
+    {
+      "file": "comprehensive_scam_79.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Phishing Scam",
+      "risk_score": 85,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (54.0% scam probability)",
+        "\u2713 High image authenticity (65%)",
+        "\u2713 Contains a link",
+        "\u2713 Suspicious URL pattern"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Phishing attempt. Use official app.",
+      "entities": {
+        "urls": [
+          "telecall-job.xyz"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.9984657764434814
+    },
+    {
+      "file": "comprehensive_scam_80.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Unknown",
+      "risk_score": 35,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Uncertain (54.1% scam probability)",
+        "\u2713 High image authenticity (65%)",
+        "\u2713 Contains a link",
+        "\u2713 Layer 2: High Entropy (Randomly generated domain string)"
+      ],
+      "recommendation": "Exercise caution. Verify using the official app.",
+      "entities": {
+        "urls": [
+          "writing-job-fake.in"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.1504809856414795
+    }
+  ],
+  "legit_results": [
+    {
+      "file": "comprehensive_legit_01.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Moderate legitimate confidence (78.2%)",
+        "\u2713 High image authenticity (65%)"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3616273403167725
+    },
+    {
+      "file": "comprehensive_legit_02.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Moderate legitimate confidence (76.7%)",
+        "\u2713 High image authenticity (65%)"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3745794296264648
+    },
+    {
+      "file": "comprehensive_legit_03.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Moderate legitimate confidence (75.9%)",
+        "\u2713 High image authenticity (65%)"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3724582195281982
+    },
+    {
+      "file": "comprehensive_legit_04.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Moderate legitimate confidence (75.8%)",
+        "\u2713 High image authenticity (65%)"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3783352375030518
+    },
+    {
+      "file": "comprehensive_legit_05.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: HIGH legitimate confidence (81.0%)",
+        "\u2713 High image authenticity (65%)"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.369600772857666
+    },
+    {
+      "file": "comprehensive_legit_06.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Moderate legitimate confidence (79.6%)",
+        "\u2713 High image authenticity (65%)"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3996493816375732
+    },
+    {
+      "file": "comprehensive_legit_07.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Moderate legitimate confidence (77.0%)",
+        "\u2713 High image authenticity (65%)"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3719456195831299
+    },
+    {
+      "file": "comprehensive_legit_08.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Moderate legitimate confidence (74.4%)",
+        "\u2713 High image authenticity (65%)",
+        "\u2713 Contains a link",
+        "\u2713 Layer 1: Exact match with Official Whitelist (Safe)",
+        "\u2713 Cross-Check: URL 'hdfcbank.com' linked to 'HDFC'."
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [
+          "hdfcbank.com"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3669795989990234
+    },
+    {
+      "file": "comprehensive_legit_09.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Moderate legitimate confidence (78.2%)",
+        "\u2713 High image authenticity (65%)"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.4012961387634277
+    },
+    {
+      "file": "comprehensive_legit_10.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Moderate legitimate confidence (78.4%)",
+        "\u2713 High image authenticity (65%)"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3889036178588867
+    },
+    {
+      "file": "comprehensive_legit_11.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: HIGH legitimate confidence (81.2%)",
+        "\u2713 High image authenticity (65%)"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.364269495010376
+    },
+    {
+      "file": "comprehensive_legit_12.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Moderate legitimate confidence (72.5%)",
+        "\u2713 High image authenticity (65%)",
+        "\u2713 Contains a link",
+        "\u2713 Layer 1: Exact match with Official Whitelist (Safe)",
+        "\u2713 Cross-Check: URL 'axisbank.com' linked to 'AXIS'."
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [
+          "axisbank.com"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3707890510559082
+    },
+    {
+      "file": "comprehensive_legit_13.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Moderate legitimate confidence (71.3%)",
+        "\u2713 High image authenticity (65%)"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3849022388458252
+    },
+    {
+      "file": "comprehensive_legit_14.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: HIGH legitimate confidence (80.2%)",
+        "\u2713 High image authenticity (65%)",
+        "\u2713 Contains a link",
+        "\u2713 Layer 1: Exact match with Official Whitelist (Safe)",
+        "\u2713 Cross-Check: URL 'hdfcbank.com' linked to 'HDFC'."
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [
+          "hdfcbank.com"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.4050610065460205
+    },
+    {
+      "file": "comprehensive_legit_15.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Moderate legitimate confidence (77.4%)",
+        "\u2713 High image authenticity (65%)"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3999581336975098
+    },
+    {
+      "file": "comprehensive_legit_16.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Moderate legitimate confidence (71.1%)",
+        "\u2713 High image authenticity (65%)"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3893852233886719
+    },
+    {
+      "file": "comprehensive_legit_17.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Moderate legitimate confidence (79.4%)",
+        "\u2713 High image authenticity (65%)"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.374650001525879
+    },
+    {
+      "file": "comprehensive_legit_18.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Moderate legitimate confidence (70.4%)",
+        "\u2713 High image authenticity (65%)"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3668863773345947
+    },
+    {
+      "file": "comprehensive_legit_19.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Moderate legitimate confidence (73.8%)",
+        "\u2713 High image authenticity (65%)"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.4111697673797607
+    },
+    {
+      "file": "comprehensive_legit_20.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Moderate legitimate confidence (75.1%)",
+        "\u2713 High image authenticity (65%)"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3697333335876465
+    },
+    {
+      "file": "comprehensive_legit_21.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Moderate legitimate confidence (74.6%)",
+        "\u2713 High image authenticity (65%)"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3697011470794678
+    },
+    {
+      "file": "comprehensive_legit_22.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Moderate legitimate confidence (73.3%)",
+        "\u2713 High image authenticity (65%)"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.5465426445007324
+    },
+    {
+      "file": "comprehensive_legit_23.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Moderate legitimate confidence (74.8%)",
+        "\u2713 High image authenticity (65%)"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3812756538391113
+    },
+    {
+      "file": "comprehensive_legit_24.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Moderate legitimate confidence (72.9%)",
+        "\u2713 High image authenticity (65%)"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.374150037765503
+    },
+    {
+      "file": "comprehensive_legit_25.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Moderate legitimate confidence (72.8%)",
+        "\u2713 High image authenticity (65%)"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.4939088821411133
+    },
+    {
+      "file": "comprehensive_legit_26.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Moderate legitimate confidence (75.5%)",
+        "\u2713 High image authenticity (65%)"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3995988368988037
+    },
+    {
+      "file": "comprehensive_legit_27.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Moderate legitimate confidence (74.2%)",
+        "\u2713 High image authenticity (65%)"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3737130165100098
+    },
+    {
+      "file": "comprehensive_legit_28.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Moderate legitimate confidence (75.2%)",
+        "\u2713 High image authenticity (65%)"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.4219238758087158
+    },
+    {
+      "file": "comprehensive_legit_29.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Moderate legitimate confidence (77.3%)",
+        "\u2713 High image authenticity (65%)"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3874869346618652
+    },
+    {
+      "file": "comprehensive_legit_30.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Moderate legitimate confidence (71.5%)",
+        "\u2713 High image authenticity (65%)"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.4072985649108887
+    },
+    {
+      "file": "comprehensive_legit_31.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Moderate legitimate confidence (70.1%)",
+        "\u2713 High image authenticity (65%)"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.394310474395752
+    },
+    {
+      "file": "comprehensive_legit_32.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Moderate legitimate confidence (74.5%)",
+        "\u2713 High image authenticity (65%)"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.2159037590026855
+    },
+    {
+      "file": "comprehensive_legit_33.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Moderate legitimate confidence (76.3%)",
+        "\u2713 High image authenticity (65%)"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3759055137634277
+    },
+    {
+      "file": "comprehensive_legit_34.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Moderate legitimate confidence (74.9%)",
+        "\u2713 High image authenticity (65%)"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3808872699737549
+    },
+    {
+      "file": "comprehensive_legit_35.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Moderate legitimate confidence (76.3%)",
+        "\u2713 High image authenticity (65%)"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.4183783531188965
+    },
+    {
+      "file": "comprehensive_legit_36.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Moderate legitimate confidence (74.7%)",
+        "\u2713 High image authenticity (65%)"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3843178749084473
+    },
+    {
+      "file": "comprehensive_legit_37.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Moderate legitimate confidence (75.8%)",
+        "\u2713 High image authenticity (65%)"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.385200023651123
+    },
+    {
+      "file": "comprehensive_legit_38.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Moderate legitimate confidence (76.4%)",
+        "\u2713 High image authenticity (65%)"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.389510154724121
+    },
+    {
+      "file": "comprehensive_legit_39.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Moderate legitimate confidence (71.9%)",
+        "\u2713 High image authenticity (65%)"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.364250659942627
+    },
+    {
+      "file": "comprehensive_legit_40.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Moderate legitimate confidence (73.6%)",
+        "\u2713 High image authenticity (65%)"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.362079381942749
+    },
+    {
+      "file": "comprehensive_legit_41.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Moderate legitimate confidence (76.9%)",
+        "\u2713 High image authenticity (65%)"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.4077305793762207
+    },
+    {
+      "file": "comprehensive_legit_42.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Moderate legitimate confidence (72.9%)",
+        "\u2713 High image authenticity (65%)"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3975164890289307
+    },
+    {
+      "file": "comprehensive_legit_43.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Moderate legitimate confidence (74.8%)",
+        "\u2713 High image authenticity (65%)",
+        "\u2713 Contains a link",
+        "\u2713 Layer 1: Exact match with Official Whitelist (Safe)",
+        "\u2713 Cross-Check: URL 'hdfcbank.com' linked to 'HDFC'."
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [
+          "hdfcbank.com"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3983790874481201
+    },
+    {
+      "file": "comprehensive_legit_44.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Moderate legitimate confidence (71.9%)",
+        "\u2713 High image authenticity (65%)"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.4073002338409424
+    },
+    {
+      "file": "comprehensive_legit_45.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Moderate legitimate confidence (68.2%)",
+        "\u2713 High image authenticity (65%)"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3599917888641357
+    },
+    {
+      "file": "comprehensive_legit_46.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Moderate legitimate confidence (71.6%)",
+        "\u2713 High image authenticity (65%)"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.387699842453003
+    },
+    {
+      "file": "comprehensive_legit_47.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Moderate legitimate confidence (68.9%)",
+        "\u2713 High image authenticity (65%)"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.4129106998443604
+    },
+    {
+      "file": "comprehensive_legit_48.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Moderate legitimate confidence (69.3%)",
+        "\u2713 High image authenticity (65%)",
+        "\u2713 Contains a link",
+        "\u2713 Layer 2: Contains brand keyword ('sbi') but NOT whitelisted",
+        "\u2713 Cross-Check: URL 'onlinesbi.com' linked to 'SBI'."
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [
+          "onlinesbi.com"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 3.389355421066284
+    },
+    {
+      "file": "comprehensive_legit_49.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Moderate legitimate confidence (69.2%)",
+        "\u2713 High image authenticity (65%)"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3063101768493652
+    },
+    {
+      "file": "comprehensive_legit_50.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Moderate legitimate confidence (71.1%)",
+        "\u2713 High image authenticity (65%)"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3934752941131592
+    },
+    {
+      "file": "comprehensive_legit_51.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Moderate legitimate confidence (69.5%)",
+        "\u2713 High image authenticity (65%)"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3929531574249268
+    },
+    {
+      "file": "comprehensive_legit_52.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Moderate legitimate confidence (75.9%)",
+        "\u2713 High image authenticity (65%)"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.42057204246521
+    },
+    {
+      "file": "comprehensive_legit_53.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Moderate legitimate confidence (73.0%)",
+        "\u2713 High image authenticity (65%)"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3822875022888184
+    },
+    {
+      "file": "comprehensive_legit_54.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Moderate legitimate confidence (74.7%)",
+        "\u2713 High image authenticity (65%)"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3793766498565674
+    },
+    {
+      "file": "comprehensive_legit_55.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Moderate legitimate confidence (74.6%)",
+        "\u2713 High image authenticity (65%)"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3878185749053955
+    },
+    {
+      "file": "comprehensive_legit_56.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Moderate legitimate confidence (74.9%)",
+        "\u2713 High image authenticity (65%)"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3909926414489746
+    },
+    {
+      "file": "comprehensive_legit_57.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Moderate legitimate confidence (72.3%)",
+        "\u2713 High image authenticity (65%)"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3710670471191406
+    },
+    {
+      "file": "comprehensive_legit_58.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Moderate legitimate confidence (76.5%)",
+        "\u2713 High image authenticity (65%)"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3710508346557617
+    },
+    {
+      "file": "comprehensive_legit_59.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Moderate legitimate confidence (72.9%)",
+        "\u2713 High image authenticity (65%)"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3916118144989014
+    },
+    {
+      "file": "comprehensive_legit_60.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\ud83e\udd16 ML Model: Moderate legitimate confidence (73.3%)",
+        "\u2713 High image authenticity (65%)"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3676481246948242
+    }
+  ]
+}

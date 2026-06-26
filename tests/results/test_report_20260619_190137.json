@@ -1,0 +1,1302 @@
+{
+  "test_run": {
+    "timestamp": "2026-06-19T19:01:37.303148",
+    "api_url": "http://127.0.0.1:8000/upload/",
+    "scam_dataset_size": 30,
+    "legit_dataset_size": 20
+  },
+  "metrics": {
+    "total_tests": 50,
+    "successful_tests": 50,
+    "failed_tests": 0,
+    "scam_total": 30,
+    "scam_detected": 20,
+    "scam_missed": 10,
+    "scam_avg_score": 75.67,
+    "legit_total": 20,
+    "legit_correct": 18,
+    "legit_flagged": 2,
+    "legit_avg_score": 5.5,
+    "accuracy": 76.0,
+    "precision": 90.91,
+    "recall": 66.67,
+    "f1_score": 76.93,
+    "avg_processing_time": 1.98
+  },
+  "scam_results": [
+    {
+      "file": "indian_scam_01.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Phishing Scam",
+      "risk_score": 100,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 100%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Urgency/Action language ('verify')",
+        "\u2713 Authority impersonation ('KYC')",
+        "\u2713 Contains a link",
+        "\u2713 Layer 2: Contains brand keyword ('hdfc') but NOT whitelisted",
+        "\u2713 Layer 2: High Entropy (Randomly generated domain string)",
+        "\u26a0 Cross-Check Mismatch: Text mentions ['hdfc'] but URL is 'hdfc-kyc-update.com'.",
+        "\u2713 Link contains a random hash path",
+        "\u2713 Suspicious domain/Hosting keywords"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Do not click. This is a phishing attempt. Log in directly through your official bank app to check your account.",
+      "entities": {
+        "urls": [
+          "hdfc-kyc-update.com/verify"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.657277822494507
+    },
+    {
+      "file": "indian_scam_02.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Phishing Scam",
+      "risk_score": 100,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 100%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Urgency/Action language ('immediately')",
+        "\u2713 Authority impersonation ('SBI')",
+        "\u2713 Contains a link",
+        "\u2713 Layer 2: Contains brand keyword ('sbi') but NOT whitelisted",
+        "\u26a0 Cross-Check Mismatch: Text mentions ['sbi'] but URL is 'sbi-secure-log.in.net'.",
+        "\u2713 Link contains a random hash path",
+        "\u2713 Suspicious domain/Hosting keywords"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Do not click. This is a phishing attempt. Log in directly through your official bank app to check your account.",
+      "entities": {
+        "urls": [
+          "sbi-secure-log.in.net/check"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.452023506164551
+    },
+    {
+      "file": "indian_scam_03.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Phishing Scam",
+      "risk_score": 100,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 100%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Urgency/Action language ('urgent')",
+        "\u2713 Authority impersonation ('SBI')",
+        "\u2713 Contains a link",
+        "\u2713 Layer 2: Contains brand keyword ('sbi') but NOT whitelisted",
+        "\u26a0 Cross-Check Mismatch: Text mentions ['sbi'] but URL is 'sbi-pan-update.in'.",
+        "\u2713 Link contains a random hash path",
+        "\u2713 Suspicious domain/Hosting keywords"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Do not click. This is a phishing attempt. Log in directly through your official bank app to check your account.",
+      "entities": {
+        "urls": [
+          "sbi-pan-update.in/urgent"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.6725027561187744
+    },
+    {
+      "file": "indian_scam_04.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Phishing Scam",
+      "risk_score": 100,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 100%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Reward bait ('cashback')",
+        "\u2713 Authority impersonation ('PAYTM')",
+        "\u2713 Contains a link",
+        "\u2713 Layer 2: Contains brand keyword ('paytm') but NOT whitelisted",
+        "\u26a0 Cross-Check Mismatch: Text mentions ['paytm'] but URL is 'paytm-reward.xyz'.",
+        "\u2713 Link contains a random hash path",
+        "\u2713 FAKE TRANSACTION SCAM: Combines transaction words with rewards"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Do not click. This is a phishing attempt. Log in directly through your official bank app to check your account.",
+      "entities": {
+        "urls": [
+          "paytm-reward.xyz/claim"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 3.5338428020477295
+    },
+    {
+      "file": "indian_scam_05.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Banking Scam",
+      "risk_score": 100,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 100%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Urgency/Action language ('verify')",
+        "\u2713 Authority impersonation ('BANK')",
+        "\u2713 Contains a link",
+        "\u2713 Layer 2: Contains brand keyword ('icici') but NOT whitelisted",
+        "\u26a0 Cross-Check Mismatch: Text mentions ['icici'] but URL is 'icici-verify.com'.",
+        "\u2713 Suspicious domain/Hosting keywords"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Do not click. This is a phishing attempt. Log in directly through your official bank app to check your account.",
+      "entities": {
+        "urls": [
+          "icici-verify.com/og.in"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.805316925048828
+    },
+    {
+      "file": "indian_scam_06.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Likely Safe",
+      "risk_score": 25,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 100%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Urgency/Action language ('scan qr')"
+      ],
+      "recommendation": "\u2705 This message appears safe. It looks like a standard bank notification or educational alert.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.8865108489990234
+    },
+    {
+      "file": "indian_scam_07.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Unknown",
+      "risk_score": 45,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 100%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Authority impersonation ('CUSTOMS')",
+        "\u2713 Contains a link"
+      ],
+      "recommendation": "Exercise caution. Do not click any links. Verify the message using the official app or website.",
+      "entities": {
+        "urls": [
+          "customs-duty.cc/pay"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 3.094414472579956
+    },
+    {
+      "file": "indian_scam_08.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 100%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Authority impersonation ('BANK')",
+        "\u2713 Contains a link",
+        "\u2713 Layer 1: Exact match with Official Whitelist (Safe)",
+        "\u2713 Cross-Check: URL 'sihub.in' is officially linked to 'FEDERAL'.",
+        "\u2713 Safe indicator found ('received')"
+      ],
+      "recommendation": "\u2705 This message appears safe. It looks like a standard bank notification or educational alert.",
+      "entities": {
+        "urls": [
+          "sihub.in/managesi"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3517208099365234
+    },
+    {
+      "file": "indian_scam_09.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Banking Scam",
+      "risk_score": 100,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 100%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Authority impersonation ('HDFC')",
+        "\u2713 Contains a link",
+        "\u2713 Layer 2: Contains brand keyword ('hdfc') but NOT whitelisted",
+        "\u2713 Layer 2: High Entropy (Randomly generated domain string)",
+        "\u26a0 Cross-Check Mismatch: Text mentions ['hdfc'] but URL is 'hdfc-statement-view.com'."
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Do not click. This is a phishing attempt. Log in directly through your official bank app to check your account.",
+      "entities": {
+        "urls": [
+          "hdfc-statement-view.com/log.in"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.7712652683258057
+    },
+    {
+      "file": "indian_scam_10.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Banking Scam",
+      "risk_score": 100,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 100%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Urgency/Action language ('verify')",
+        "\u2713 Authority impersonation ('BANK')",
+        "\u2713 Contains a link",
+        "\u2713 Layer 2: Contains brand keyword ('axis') but NOT whitelisted",
+        "\u2713 Layer 2: High Entropy (Randomly generated domain string)",
+        "\u26a0 Cross-Check Mismatch: Text mentions ['axis'] but URL is 'axis-otp-verify.net'.",
+        "\u2713 Suspicious domain/Hosting keywords"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Do not click. This is a phishing attempt. Log in directly through your official bank app to check your account.",
+      "entities": {
+        "urls": [
+          "axis-otp-verify.net"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.647261381149292
+    },
+    {
+      "file": "indian_scam_11.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Reward Scam",
+      "risk_score": 100,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 100%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Reward bait ('cashback')",
+        "\u2713 Authority impersonation ('PHONEPE')",
+        "\u2713 Contains a link",
+        "\u2713 Layer 2: Contains brand keyword ('phonepe') but NOT whitelisted",
+        "\u26a0 Cross-Check Mismatch: Text mentions ['phonepe'] but URL is 'phonepe-cashback.xyz'.",
+        "\u2713 FAKE TRANSACTION SCAM: Combines transaction words with rewards"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: FAKE TRANSACTION SCAM. Scammers send fake 'money received' messages to make you scan a malicious QR code. Do not scan anything!",
+      "entities": {
+        "urls": [
+          "phonepe-cashback.xyz"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.657806634902954
+    },
+    {
+      "file": "indian_scam_12.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Phishing Scam",
+      "risk_score": 100,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 100%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Reward bait ('claim')",
+        "\u2713 Authority impersonation ('ING')",
+        "\u2713 Contains a link",
+        "\u2713 Layer 2: High Entropy (Randomly generated domain string)",
+        "\u2713 Link contains a random hash path",
+        "\u2713 FAKE TRANSACTION SCAM: Combines transaction words with rewards"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Do not click. This is a phishing attempt. Log in directly through your official bank app to check your account.",
+      "entities": {
+        "urls": [
+          "incometax-refund.ce/claim"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.2426087856292725
+    },
+    {
+      "file": "indian_scam_13.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Likely Safe",
+      "risk_score": 25,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 100%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Urgency/Action language ('scan qr')"
+      ],
+      "recommendation": "\u2705 This message appears safe. It looks like a standard bank notification or educational alert.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.2950518131256104
+    },
+    {
+      "file": "indian_scam_14.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Phishing Scam",
+      "risk_score": 100,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 100%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Urgency/Action language ('verify')",
+        "\u2713 Reward bait ('claim')",
+        "\u2713 Contains a link",
+        "\u2713 Link contains a random hash path",
+        "\u2713 Suspicious domain/Hosting keywords",
+        "\u2713 FAKE TRANSACTION SCAM: Combines transaction words with rewards"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Do not click. This is a phishing attempt. Log in directly through your official bank app to check your account.",
+      "entities": {
+        "urls": [
+          "epfo-claim.in/verify"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.543700695037842
+    },
+    {
+      "file": "indian_scam_15.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Phishing Scam",
+      "risk_score": 100,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 100%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Reward bait ('reward')",
+        "\u2713 Authority impersonation ('AMAZON PAY')",
+        "\u2713 Contains a link",
+        "\u2713 Layer 2: Contains brand keyword ('amazon') but NOT whitelisted",
+        "\u26a0 Cross-Check Mismatch: Text mentions ['amazon'] but URL is 'amazon-reward.xyz'.",
+        "\u2713 Link contains a random hash path",
+        "\u2713 FAKE TRANSACTION SCAM: Combines transaction words with rewards"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Do not click. This is a phishing attempt. Log in directly through your official bank app to check your account.",
+      "entities": {
+        "urls": [
+          "amazon-reward.xyz/claim"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.651698112487793
+    },
+    {
+      "file": "indian_scam_16.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Phishing Scam",
+      "risk_score": 100,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 100%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Urgency/Action language ('alert')",
+        "\u2713 Authority impersonation ('BANK')",
+        "\u2713 Contains a link",
+        "\u2713 Layer 2: Contains brand keyword ('hdfc') but NOT whitelisted",
+        "\u26a0 Cross-Check Mismatch: Text mentions ['hdfc'] but URL is 'hdfc-secure.net'.",
+        "\u2713 Link contains a random hash path",
+        "\u2713 Suspicious domain/Hosting keywords"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Do not click. This is a phishing attempt. Log in directly through your official bank app to check your account.",
+      "entities": {
+        "urls": [
+          "hdfc-secure.net/verify"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.7552669048309326
+    },
+    {
+      "file": "indian_scam_17.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Phishing Scam",
+      "risk_score": 95,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 100%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Urgency/Action language ('urgent')",
+        "\u2713 Contains a link",
+        "\u2713 Link contains a random hash path",
+        "\u2713 Suspicious domain/Hosting keywords"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Do not click. This is a phishing attempt. Log in directly through your official bank app to check your account.",
+      "entities": {
+        "urls": [
+          "pan-link-update.com/urgent"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.538442850112915
+    },
+    {
+      "file": "indian_scam_18.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Courier Scam",
+      "risk_score": 45,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 100%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Authority impersonation ('CUSTOMS')",
+        "\u2713 Contains a link"
+      ],
+      "recommendation": "Exercise caution. Do not click any links. Verify the message using the official app or website.",
+      "entities": {
+        "urls": [
+          "fedex-customs.cc/pay"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.6579034328460693
+    },
+    {
+      "file": "indian_scam_19.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Reward Scam",
+      "risk_score": 55,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 100%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Reward bait ('won')",
+        "\u2713 FAKE TRANSACTION SCAM: Combines transaction words with rewards"
+      ],
+      "recommendation": "Exercise caution. Do not click any links. Verify the message using the official app or website.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [
+          "+91-9876543210"
+        ],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.1476693153381348
+    },
+    {
+      "file": "indian_scam_20.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Banking Scam",
+      "risk_score": 100,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 100%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Urgency/Action language ('suspend')",
+        "\u2713 Authority impersonation ('ICICI')",
+        "\u2713 Contains a link",
+        "\u2713 Layer 2: Contains brand keyword ('icici') but NOT whitelisted",
+        "\u26a0 Cross-Check Mismatch: Text mentions ['icici'] but URL is 'icici-reactivate.com'."
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Do not click. This is a phishing attempt. Log in directly through your official bank app to check your account.",
+      "entities": {
+        "urls": [
+          "icici-reactivate.com/og.in"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 3.1314682960510254
+    },
+    {
+      "file": "indian_scam_21.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Bank KYC Scam",
+      "risk_score": 100,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 100%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Urgency/Action language ('immediately')",
+        "\u2713 Authority impersonation ('KYC')",
+        "\u2713 Contains a link",
+        "\u2713 Layer 2: High Entropy (Randomly generated domain string)",
+        "\u2713 Suspicious domain/Hosting keywords"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Do not click. Banks never ask for KYC via SMS links. Verify using the official banking app.",
+      "entities": {
+        "urls": [
+          "kyc-update-urgent.in"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.2455976009368896
+    },
+    {
+      "file": "indian_scam_22.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Phishing Scam",
+      "risk_score": 100,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 100%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Urgency/Action language ('failed')",
+        "\u2713 Authority impersonation ('SBI')",
+        "\u2713 Contains a link",
+        "\u2713 Layer 2: Contains brand keyword ('sbi') but NOT whitelisted",
+        "\u26a0 Cross-Check Mismatch: Text mentions ['sbi'] but URL is 'sbi-update.net'.",
+        "\u2713 Link contains a random hash path",
+        "\u2713 Suspicious domain/Hosting keywords"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Do not click. This is a phishing attempt. Log in directly through your official bank app to check your account.",
+      "entities": {
+        "urls": [
+          "sbi-update.net/verify"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.7524235248565674
+    },
+    {
+      "file": "indian_scam_23.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Reward Scam",
+      "risk_score": 55,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 100%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Reward bait ('cashback')",
+        "\u2713 FAKE TRANSACTION SCAM: Combines transaction words with rewards"
+      ],
+      "recommendation": "Exercise caution. Do not click any links. Verify the message using the official app or website.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.0980796813964844
+    },
+    {
+      "file": "indian_scam_24.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Banking Scam",
+      "risk_score": 100,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 100%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Urgency/Action language ('blocked')",
+        "\u2713 Authority impersonation ('HDFC')",
+        "\u2713 Contains a link",
+        "\u2713 Layer 2: Contains brand keyword ('hdfc') but NOT whitelisted",
+        "\u26a0 Cross-Check Mismatch: Text mentions ['hdfc'] but URL is 'hdfc-card-verify.com'.",
+        "\u2713 Suspicious domain/Hosting keywords"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Do not click. This is a phishing attempt. Log in directly through your official bank app to check your account.",
+      "entities": {
+        "urls": [
+          "hdfc-card-verify.com"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.6623635292053223
+    },
+    {
+      "file": "indian_scam_25.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Reward Scam",
+      "risk_score": 85,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 100%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Reward bait ('claim')",
+        "\u2713 Authority impersonation ('ING')",
+        "\u2713 FAKE TRANSACTION SCAM: Combines transaction words with rewards"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: FAKE TRANSACTION SCAM. Scammers send fake 'money received' messages to make you scan a malicious QR code. Do not scan anything!",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.1288926601409912
+    },
+    {
+      "file": "indian_scam_26.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Unknown",
+      "risk_score": 75,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 100%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Contains a link",
+        "\u2713 Layer 2: Contains brand keyword ('axis') but NOT whitelisted",
+        "\u26a0 Cross-Check Mismatch: Text mentions ['axis'] but URL is 'axis-unlock.net'."
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Do not click the link or reply. This is a confirmed scam pattern.",
+      "entities": {
+        "urls": [
+          "axis-unlock.net"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.8336031436920166
+    },
+    {
+      "file": "indian_scam_27.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Likely Safe",
+      "risk_score": 25,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 100%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Urgency/Action language ('verify')"
+      ],
+      "recommendation": "\u2705 This message appears safe. It looks like a standard bank notification or educational alert.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.118173360824585
+    },
+    {
+      "file": "indian_scam_28.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 100%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Safe indicator found ('received')"
+      ],
+      "recommendation": "\u2705 This message appears safe. It looks like a standard bank notification or educational alert.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.1489675045013428
+    },
+    {
+      "file": "indian_scam_29.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Unknown",
+      "risk_score": 55,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 100%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Urgency/Action language ('update')",
+        "\u2713 Contains a link",
+        "\u2713 Suspicious domain/Hosting keywords"
+      ],
+      "recommendation": "Exercise caution. Do not click any links. Verify the message using the official app or website.",
+      "entities": {
+        "urls": [
+          "pan-update.xyz"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.7148630619049072
+    },
+    {
+      "file": "indian_scam_30.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Banking Scam",
+      "risk_score": 85,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 100%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Urgency/Action language ('alert')",
+        "\u2713 Authority impersonation ('BANK')",
+        "\u2713 Contains a link",
+        "\u2713 Suspicious domain/Hosting keywords"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Do not click. This is a phishing attempt. Log in directly through your official bank app to check your account.",
+      "entities": {
+        "urls": [
+          "bank-verify.in"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.3374619483947754
+    }
+  ],
+  "legit_results": [
+    {
+      "file": "indian_legit_01.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 95%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Authority impersonation ('BANK')",
+        "\u2713 Safe indicator found ('statement')"
+      ],
+      "recommendation": "\u2705 This message appears safe. It looks like a standard bank notification or educational alert.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.1875231266021729
+    },
+    {
+      "file": "indian_legit_02.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 96%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Authority impersonation ('HDFC')",
+        "\u2713 Safe indicator found ('credited')"
+      ],
+      "recommendation": "\u2705 This message appears safe. It looks like a standard bank notification or educational alert.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.17836594581604
+    },
+    {
+      "file": "indian_legit_03.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 98%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Authority impersonation ('SBI')",
+        "\u2713 Safe indicator found ('debited')"
+      ],
+      "recommendation": "\u2705 This message appears safe. It looks like a standard bank notification or educational alert.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.7331383228302002
+    },
+    {
+      "file": "indian_legit_04.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Banking Scam",
+      "risk_score": 55,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 95%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Urgency/Action language ('share otp')",
+        "\u2713 Authority impersonation ('BANK')"
+      ],
+      "recommendation": "Exercise caution. Do not click any links. Verify the message using the official app or website.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3915159702301025
+    },
+    {
+      "file": "indian_legit_05.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Banking Scam",
+      "risk_score": 55,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 96%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Urgency/Action language ('alert')",
+        "\u2713 Authority impersonation ('BANK')"
+      ],
+      "recommendation": "Exercise caution. Do not click any links. Verify the message using the official app or website.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.724170446395874
+    },
+    {
+      "file": "indian_legit_06.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 98%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Safe indicator found ('received')"
+      ],
+      "recommendation": "\u2705 This message appears safe. It looks like a standard bank notification or educational alert.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.5062825679779053
+    },
+    {
+      "file": "indian_legit_07.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 95%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Authority impersonation ('BANK')",
+        "\u2713 Safe indicator found ('received')"
+      ],
+      "recommendation": "\u2705 This message appears safe. It looks like a standard bank notification or educational alert.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.366044521331787
+    },
+    {
+      "file": "indian_legit_08.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 95%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Safe indicator found ('received')"
+      ],
+      "recommendation": "\u2705 This message appears safe. It looks like a standard bank notification or educational alert.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.4187641143798828
+    },
+    {
+      "file": "indian_legit_09.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 95%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Authority impersonation ('SBI')",
+        "\u2713 Safe indicator found ('received')"
+      ],
+      "recommendation": "\u2705 This message appears safe. It looks like a standard bank notification or educational alert.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.5480070114135742
+    },
+    {
+      "file": "indian_legit_10.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 95%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Educational/Warning context detected (Safe)",
+        "\u2713 Authority impersonation ('BANK')",
+        "\u2713 Safe indicator found ('received')"
+      ],
+      "recommendation": "\u2705 This message appears safe. It looks like a standard bank notification or educational alert.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.4641714096069336
+    },
+    {
+      "file": "indian_legit_11.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 98%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Safe indicator found ('debited')"
+      ],
+      "recommendation": "\u2705 This message appears safe. It looks like a standard bank notification or educational alert.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.4136409759521484
+    },
+    {
+      "file": "indian_legit_12.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 98%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Safe indicator found ('minimum amount')"
+      ],
+      "recommendation": "\u2705 This message appears safe. It looks like a standard bank notification or educational alert.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.9846162796020508
+    },
+    {
+      "file": "indian_legit_13.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 96%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Authority impersonation ('ICICI')",
+        "\u2713 Safe indicator found ('received')"
+      ],
+      "recommendation": "\u2705 This message appears safe. It looks like a standard bank notification or educational alert.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.6914799213409424
+    },
+    {
+      "file": "indian_legit_14.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 95%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Safe indicator found ('received')"
+      ],
+      "recommendation": "\u2705 This message appears safe. It looks like a standard bank notification or educational alert.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.645409107208252
+    },
+    {
+      "file": "indian_legit_15.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 95%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Authority impersonation ('SBI')",
+        "\u2713 Safe indicator found ('received')"
+      ],
+      "recommendation": "\u2705 This message appears safe. It looks like a standard bank notification or educational alert.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3895628452301025
+    },
+    {
+      "file": "indian_legit_16.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 98%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Authority impersonation ('BANK')",
+        "\u2713 Contains a link",
+        "\u2713 Layer 1: Exact match with Official Whitelist (Safe)",
+        "\u2713 Cross-Check: URL 'hdfcbank.com' is officially linked to 'HDFC'.",
+        "\u2713 Safe indicator found ('statement')"
+      ],
+      "recommendation": "\u2705 This message appears safe. It looks like a standard bank notification or educational alert.",
+      "entities": {
+        "urls": [
+          "hdfcbank.com"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.4429490566253662
+    },
+    {
+      "file": "indian_legit_17.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 97%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Safe indicator found ('credited')"
+      ],
+      "recommendation": "\u2705 This message appears safe. It looks like a standard bank notification or educational alert.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.4693894386291504
+    },
+    {
+      "file": "indian_legit_18.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 96%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Safe indicator found ('received')"
+      ],
+      "recommendation": "\u2705 This message appears safe. It looks like a standard bank notification or educational alert.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3987691402435303
+    },
+    {
+      "file": "indian_legit_19.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 99%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Authority impersonation ('BANK')",
+        "\u2713 Safe indicator found ('credited')"
+      ],
+      "recommendation": "\u2705 This message appears safe. It looks like a standard bank notification or educational alert.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.4533355236053467
+    },
+    {
+      "file": "indian_legit_20.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 95%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Safe indicator found ('received')"
+      ],
+      "recommendation": "\u2705 This message appears safe. It looks like a standard bank notification or educational alert.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.851003646850586
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+======================================================================
+SATYASETU TEST REPORT
+======================================================================
+
+Test Run: 2026-06-19T19:01:37.303148
+Dataset: 30 scams, 20 legitimate
+
+----------------------------------------------------------------------
+KEY METRICS
+----------------------------------------------------------------------
+Overall Accuracy:    76.0%
+Precision:           90.91%
+Recall:              66.67%
+F1 Score:            76.93
+Avg Processing Time: 1.98s
+
+----------------------------------------------------------------------
+SCAM DETECTION
+----------------------------------------------------------------------
+Total Scams:         30
+Correctly Detected:  20
+Missed:              10
+Average Risk Score:  75.67
+
+----------------------------------------------------------------------
+LEGITIMATE MESSAGE HANDLING
+----------------------------------------------------------------------
+Total Legit:         20
+Correctly Passed:    18
+False Positives:     2
+Average Risk Score:  5.5
+
+----------------------------------------------------------------------
+PROBLEMATIC CASES
+----------------------------------------------------------------------
+
+Missed Scams (risk_score < 70):
+  - indian_scam_06.png (score: 25, category: Likely Safe)
+  - indian_scam_07.png (score: 45, category: Unknown)
+  - indian_scam_08.png (score: 0, category: Likely Safe)
+  - indian_scam_13.png (score: 25, category: Likely Safe)
+  - indian_scam_18.png (score: 45, category: Courier Scam)
+  - indian_scam_19.png (score: 55, category: Reward Scam)
+  - indian_scam_23.png (score: 55, category: Reward Scam)
+  - indian_scam_27.png (score: 25, category: Likely Safe)
+  - indian_scam_28.png (score: 0, category: Likely Safe)
+  - indian_scam_29.png (score: 55, category: Unknown)
+
+False Positives (legit flagged as scam):
+  - indian_legit_04.png (score: 55, category: Banking Scam)
+  - indian_legit_05.png (score: 55, category: Banking Scam)
+
+======================================================================

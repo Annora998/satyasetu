@@ -1,0 +1,63 @@
+======================================================================
+SATYASETU TEST REPORT
+======================================================================
+
+Test Run: 2026-06-20T13:51:29.010714
+Dataset: 600 scams, 273 legitimate
+
+----------------------------------------------------------------------
+KEY METRICS
+----------------------------------------------------------------------
+Overall Accuracy:    97.48%
+Precision:           99.83%
+Recall:              96.5%
+F1 Score:            98.14
+Avg Processing Time: 2.22s
+
+----------------------------------------------------------------------
+SCAM DETECTION
+----------------------------------------------------------------------
+Total Scams:         600
+Correctly Detected:  579
+Missed:              21
+Average Risk Score:  96.59
+
+----------------------------------------------------------------------
+LEGITIMATE MESSAGE HANDLING
+----------------------------------------------------------------------
+Total Legit:         273
+Correctly Passed:    272
+False Positives:     1
+Average Risk Score:  0.74
+
+----------------------------------------------------------------------
+PROBLEMATIC CASES
+----------------------------------------------------------------------
+
+Missed Scams (risk_score < 70):
+  - massive_scam_016.png (score: 0, category: Likely Safe)
+  - massive_scam_141.png (score: 15, category: Likely Safe)
+  - massive_scam_192.png (score: 0, category: Likely Safe)
+  - massive_scam_256.png (score: 42, category: Unknown)
+  - scam_1000_0354.png (score: 0, category: Likely Safe)
+  - scam_1000_0405.png (score: 0, category: Likely Safe)
+  - scam_1000_0408.png (score: 0, category: Likely Safe)
+  - scam_1000_0411.png (score: 0, category: Likely Safe)
+  - scam_1000_0437.png (score: 0, category: Likely Safe)
+  - scam_1000_0579.png (score: 0, category: Likely Safe)
+  - scam_1000_0581.png (score: 0, category: Likely Safe)
+  - scam_1000_0582.png (score: 0, category: Likely Safe)
+  - scam_1000_0583.png (score: 0, category: Likely Safe)
+  - scam_1000_0584.png (score: 0, category: Likely Safe)
+  - scam_1000_0585.png (score: 0, category: Likely Safe)
+  - scam_1000_0586.png (score: 0, category: Likely Safe)
+  - scam_1000_0587.png (score: 0, category: Likely Safe)
+  - scam_1000_0588.png (score: 0, category: Likely Safe)
+  - scam_1000_0589.png (score: 0, category: Likely Safe)
+  - scam_1000_0590.png (score: 0, category: Likely Safe)
+  - scam_1000_0591.png (score: 0, category: Likely Safe)
+
+False Positives (legit flagged as scam):
+  - massive_legit_088.png (score: 100, category: Banking Scam)
+
+======================================================================

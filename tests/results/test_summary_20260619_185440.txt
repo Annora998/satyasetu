@@ -1,0 +1,75 @@
+======================================================================
+SATYASETU TEST REPORT
+======================================================================
+
+Test Run: 2026-06-19T18:54:40.931788
+Dataset: 30 scams, 20 legitimate
+
+----------------------------------------------------------------------
+KEY METRICS
+----------------------------------------------------------------------
+Overall Accuracy:    32.0%
+Precision:           30.0%
+Recall:              10.0%
+F1 Score:            15.0
+Avg Processing Time: 1.68s
+
+----------------------------------------------------------------------
+SCAM DETECTION
+----------------------------------------------------------------------
+Total Scams:         30
+Correctly Detected:  3
+Missed:              27
+Average Risk Score:  26.67
+
+----------------------------------------------------------------------
+LEGITIMATE MESSAGE HANDLING
+----------------------------------------------------------------------
+Total Legit:         20
+Correctly Passed:    13
+False Positives:     7
+Average Risk Score:  13.0
+
+----------------------------------------------------------------------
+PROBLEMATIC CASES
+----------------------------------------------------------------------
+
+Missed Scams (risk_score < 70):
+  - sms_spam_02.png (score: 30, category: Banking Scam)
+  - sms_spam_03.png (score: 25, category: Likely Safe)
+  - sms_spam_04.png (score: 25, category: Likely Safe)
+  - sms_spam_05.png (score: 25, category: Likely Safe)
+  - sms_spam_06.png (score: 30, category: Banking Scam)
+  - sms_spam_07.png (score: 25, category: Likely Safe)
+  - sms_spam_08.png (score: 25, category: Likely Safe)
+  - sms_spam_09.png (score: 50, category: Unknown)
+  - sms_spam_10.png (score: 0, category: Likely Safe)
+  - sms_spam_11.png (score: 0, category: Likely Safe)
+  - sms_spam_12.png (score: 30, category: Banking Scam)
+  - sms_spam_14.png (score: 15, category: Likely Safe)
+  - sms_spam_16.png (score: 0, category: Likely Safe)
+  - sms_spam_17.png (score: 25, category: Likely Safe)
+  - sms_spam_18.png (score: 15, category: Likely Safe)
+  - sms_spam_19.png (score: 0, category: Likely Safe)
+  - sms_spam_20.png (score: 25, category: Likely Safe)
+  - sms_spam_21.png (score: 25, category: Likely Safe)
+  - sms_spam_22.png (score: 55, category: Banking Scam)
+  - sms_spam_23.png (score: 0, category: Likely Safe)
+  - sms_spam_24.png (score: 40, category: Unknown)
+  - sms_spam_25.png (score: 25, category: Likely Safe)
+  - sms_spam_26.png (score: 0, category: Likely Safe)
+  - sms_spam_27.png (score: 55, category: Banking Scam)
+  - sms_spam_28.png (score: 0, category: Likely Safe)
+  - sms_spam_29.png (score: 0, category: Likely Safe)
+  - sms_spam_30.png (score: 0, category: Likely Safe)
+
+False Positives (legit flagged as scam):
+  - sms_legit_01.png (score: 30, category: Banking Scam)
+  - sms_legit_02.png (score: 30, category: Unknown)
+  - sms_legit_07.png (score: 30, category: Banking Scam)
+  - sms_legit_11.png (score: 30, category: Banking Scam)
+  - sms_legit_16.png (score: 30, category: Banking Scam)
+  - sms_legit_17.png (score: 30, category: Banking Scam)
+  - sms_legit_18.png (score: 30, category: Banking Scam)
+
+======================================================================

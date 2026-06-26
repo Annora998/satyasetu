@@ -1,0 +1,72 @@
+======================================================================
+SATYASETU TEST REPORT
+======================================================================
+
+Test Run: 2026-06-19T21:52:24.939419
+Dataset: 90 scams, 60 legitimate
+
+----------------------------------------------------------------------
+KEY METRICS
+----------------------------------------------------------------------
+Overall Accuracy:    92.0%
+Precision:           96.43%
+Recall:              90.0%
+F1 Score:            93.1
+Avg Processing Time: 2.02s
+
+----------------------------------------------------------------------
+SCAM DETECTION
+----------------------------------------------------------------------
+Total Scams:         90
+Correctly Detected:  81
+Missed:              9
+Average Risk Score:  74.44
+
+----------------------------------------------------------------------
+LEGITIMATE MESSAGE HANDLING
+----------------------------------------------------------------------
+Total Legit:         60
+Correctly Passed:    57
+False Positives:     3
+Average Risk Score:  2.0
+
+----------------------------------------------------------------------
+PROBLEMATIC CASES
+----------------------------------------------------------------------
+
+Missed Scams (risk_score < 70):
+  - comprehensive_scam_81.png (score: 50, category: Lottery Scam)
+  - comprehensive_scam_83.png (score: 50, category: Lottery Scam)
+  - comprehensive_scam_86.png (score: 50, category: Lottery Scam)
+  - comprehensive_scam_89.png (score: 50, category: Lottery Scam)
+  - comprehensive_scam_04.png (score: 65, category: Unknown)
+  - comprehensive_scam_20.png (score: 40, category: Unknown)
+  - comprehensive_scam_23.png (score: 60, category: Courier Scam)
+  - comprehensive_scam_24.png (score: 0, category: Likely Safe)
+  - comprehensive_scam_29.png (score: 0, category: Likely Safe)
+  - comprehensive_scam_35.png (score: 0, category: Likely Safe)
+  - comprehensive_scam_38.png (score: 25, category: Likely Safe)
+  - comprehensive_scam_39.png (score: 50, category: Government Scam)
+  - comprehensive_scam_45.png (score: 0, category: Likely Safe)
+  - comprehensive_scam_46.png (score: 65, category: Unknown)
+  - comprehensive_scam_48.png (score: 65, category: Unknown)
+  - comprehensive_scam_49.png (score: 35, category: Phishing Scam)
+  - comprehensive_scam_51.png (score: 50, category: E-Challan Scam)
+  - comprehensive_scam_53.png (score: 50, category: E-Challan Scam)
+  - comprehensive_scam_56.png (score: 50, category: E-Challan Scam)
+  - comprehensive_scam_61.png (score: 50, category: Utility Scam)
+  - comprehensive_scam_64.png (score: 50, category: Utility Scam)
+  - comprehensive_scam_66.png (score: 50, category: Utility Scam)
+  - comprehensive_scam_68.png (score: 50, category: Unknown)
+  - comprehensive_scam_69.png (score: 25, category: Likely Safe)
+  - comprehensive_scam_72.png (score: 50, category: Job Scam)
+  - comprehensive_scam_75.png (score: 50, category: Job Scam)
+  - comprehensive_scam_78.png (score: 0, category: Likely Safe)
+  - comprehensive_scam_80.png (score: 50, category: Unknown)
+
+False Positives (legit flagged as scam):
+  - comprehensive_legit_41.png (score: 35, category: Unknown)
+  - comprehensive_legit_44.png (score: 35, category: Unknown)
+  - comprehensive_legit_46.png (score: 35, category: Unknown)
+
+======================================================================

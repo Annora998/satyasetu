@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SatyaSetu - Trust Intelligence</title>
+    <style>
+        :root {
+            --safe-color: #10b981; --safe-bg: #d1fae5;
+            --suspicious-color: #f59e0b; --suspicious-bg: #fef3c7;
+            --danger-color: #ef4444; --danger-bg: #fee2e2;
+            --text-main: #1f2937; --text-muted: #6b7280;
+            --bg-main: #f9fafb; --card-bg: #ffffff;
+        }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color: var(--bg-main); color: var(--text-main); margin: 0; padding: 0; display: flex; justify-content: center; min-height: 100vh; }
+        .container { max-width: 900px; width: 100%; padding: 2rem; }
+        header { text-align: center; margin-bottom: 2rem; }
+        header h1 { font-size: 2.5rem; margin: 0; color: #111827; letter-spacing: -0.05em; }
+        header p { color: var(--text-muted); margin-top: 0.5rem; font-size: 1.1rem; }
+        .privacy-badge { text-align: center; color: var(--text-muted); font-size: 0.9rem; margin-bottom: 2rem; }
+        .upload-area { background: var(--card-bg); border: 2px dashed #d1d5db; border-radius: 16px; padding: 4rem 2rem; text-align: center; cursor: pointer; transition: all 0.3s ease; }
+        .upload-area:hover, .upload-area.dragover { border-color: #3b82f6; background-color: #eff6ff; }
+        .upload-area svg { width: 48px; height: 48px; color: #9ca3af; margin-bottom: 1rem; }
+        .upload-area p { color: var(--text-muted); font-size: 1.1rem; margin: 0; }
+        .loading { text-align: center; padding: 3rem; }
+        .spinner { width: 40px; height: 40px; border: 4px solid #e5e7eb; border-top: 4px solid #3b82f6; border-radius: 50%; animation: spin 1s linear infinite; margin: 0 auto 1rem; }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+        .results { animation: fadeIn 0.5s ease; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        .score-card { background: var(--card-bg); border-radius: 16px; padding: 2rem; text-align: center; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); margin-bottom: 2rem; }
+        .score-circle { width: 120px; height: 120px; border-radius: 50%; display: flex; flex-direction: column; justify-content: center; align-items: center; margin: 0 auto 1.5rem; border: 8px solid; }
+        .score-circle span { font-size: 2.5rem; font-weight: bold; line-height: 1; }
+        .score-circle small { font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em; opacity: 0.8; }
+        .score-card h2 { margin: 0; font-size: 1.5rem; }
+        .recommendation { padding: 1.5rem; border-radius: 12px; font-size: 1.1rem; font-weight: 500; margin-bottom: 2rem; border-left: 6px solid; }
+        .section { background: var(--card-bg); border-radius: 16px; padding: 1.5rem; margin-bottom: 1.5rem; box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1); }
+        .section h3 { margin-top: 0; margin-bottom: 1rem; font-size: 1.2rem; border-bottom: 1px solid #e5e7eb; padding-bottom: 0.5rem; }
+        .section ul { list-style-type: none; padding: 0; margin: 0; }
+        .section li { padding: 0.5rem 0; border-bottom: 1px solid #f3f4f6; color: var(--text-muted); }
+        .section li:last-child { border-bottom: none; }
+        .section pre { background: #f3f4f6; padding: 1rem; border-radius: 8px; white-space: pre-wrap; word-wrap: break-word; font-size: 0.9rem; color: #374151; max-height: 300px; overflow-y: auto; font-family: monospace; }
+        .btn { display: block; width: 100%; padding: 1rem; background: #111827; color: white; border: none; border-radius: 12px; font-size: 1.1rem; font-weight: 600; cursor: pointer; transition: background 0.2s; margin-top: 1rem; }
+        .btn:hover { background: #374151; }
+        .theme-safe .score-circle { border-color: var(--safe-color); color: var(--safe-color); background: var(--safe-bg); }
+        .theme-safe .recommendation { background: var(--safe-bg); border-color: var(--safe-color); color: #065f46; }
+        .theme-suspicious .score-circle { border-color: var(--suspicious-color); color: var(--suspicious-color); background: var(--suspicious-bg); }
+        .theme-suspicious .recommendation { background: var(--suspicious-bg); border-color: var(--suspicious-color); color: #92400e; }
+        .theme-danger .score-circle { border-color: var(--danger-color); color: var(--danger-color); background: var(--danger-bg); }
+        .theme-danger .recommendation { background: var(--danger-bg); border-color: var(--danger-color); color: #991b1b; }
+        .qr-intent-card { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1rem; margin-bottom: 1rem; }
+        .qr-intent-card h4 { margin: 0 0 0.5rem 0; color: #0f172a; font-size: 1.1rem; }
+        .qr-warning { background: #fee2e2; color: #991b1b; padding: 0.75rem; border-radius: 6px; font-weight: 600; margin: 0.5rem 0; border-left: 4px solid #ef4444; }
+
+        /* Image Editor */
+        .image-editor { background: var(--card-bg); border-radius: 16px; padding: 1.5rem; margin-bottom: 1.5rem; box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1); }
+        .editor-toolbar { display: flex; gap: 0.75rem; margin-bottom: 1rem; flex-wrap: wrap; }
+        .editor-toolbar button { padding: 0.6rem 1.2rem; border: 2px solid #d1d5db; background: white; border-radius: 8px; cursor: pointer; font-weight: 600; transition: all 0.2s; font-size: 0.95rem; }
+        .editor-toolbar button:hover { border-color: #3b82f6; background: #eff6ff; }
+        .editor-toolbar button.active { border-color: #3b82f6; background: #3b82f6; color: white; }
+        .editor-toolbar button.danger { border-color: #ef4444; color: #ef4444; }
+        .editor-toolbar button.danger:hover { background: #fee2e2; }
+        .editor-toolbar button.primary { border-color: #111827; background: #111827; color: white; }
+        .editor-toolbar button.primary:hover { background: #374151; }
+        .canvas-container { position: relative; display: inline-block; max-width: 100%; border: 2px solid #e5e7eb; border-radius: 8px; overflow: hidden; }
+        #editor-canvas { display: block; max-width: 100%; }
+        .editor-hint { background: #eff6ff; border: 1px solid #3b82f6; border-radius: 8px; padding: 1rem; margin-bottom: 1rem; color: #1e40af; font-size: 0.9rem; }
+        .blur-counter { background: #fef3c7; border: 1px solid #f59e0b; border-radius: 8px; padding: 0.5rem 1rem; color: #92400e; font-weight: 600; display: inline-block; margin-left: auto; }
+
+        /* Blurred text styling */
+        .blurred-word { background: #1f2937; color: #1f2937; padding: 0 4px; border-radius: 3px; user-select: none; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>SatyaSetu</h1>
+            <p>AI-Powered Scam Detection & Trust Intelligence</p>
+        </header>
+        <div class="privacy-badge">🔒 Analyzed 100% locally on your device. No data sent to the cloud.</div>
+
+        <main>
+            <!-- Upload Area -->
+            <div id="upload-area" class="upload-area">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
+                </svg>
+                <p>Drag & drop a screenshot here, or click to browse</p>
+                <input type="file" id="file-input" accept="image/*" hidden>
+            </div>
+
+            <!-- Image Editor with Blur Tool -->
+            <div id="image-editor" class="image-editor" style="display: none;">
+                <div class="editor-hint">
+                    💡 <strong>Optional Privacy Tool:</strong> Draw rectangles over sensitive info (phone numbers, account numbers) to mark them as <code>[BLURRED]</code> in the extracted text. The scam analysis still runs on the full image for accuracy.
+                </div>
+                <div class="editor-toolbar">
+                    <button id="toggle-edit-mode">🖊️ Enable Blur Tool</button>
+                    <button id="reset-editor" class="danger" disabled>↺ Reset</button>
+                    <button id="analyze-btn" class="primary">🔍 Analyze Image</button>
+                    <span id="blur-counter" class="blur-counter" style="display: none;">0 regions marked</span>
+                </div>
+                <div class="canvas-container">
+                    <canvas id="editor-canvas"></canvas>
+                </div>
+            </div>
+
+            <!-- Loading State -->
+            <div id="loading" class="loading" style="display: none;">
+                <div class="spinner"></div>
+                <p>Analyzing message & scanning for QR codes...</p>
+            </div>
+
+            <!-- Results Area -->
+            <div id="results" class="results" style="display: none;">
+                <div class="score-card">
+                    <div id="score-circle" class="score-circle">
+                        <span id="score-value">0</span>
+                        <small>Risk Score</small>
+                    </div>
+                    <h2 id="category">Category</h2>
+                </div>
+
+                <div id="recommendation" class="recommendation">Recommendation text here</div>
+
+                <div id="qr-section" class="section" style="display: none;">
+                    <h3>📱 QR Code Intelligence</h3>
+                    <div id="qr-image-container" style="text-align: center; margin-bottom: 1rem;"></div>
+                    <div id="qr-analysis"></div>
+                </div>
+
+                <div class="section">
+                    <h3>Why this score?</h3>
+                    <ul id="reasons-list"></ul>
+                </div>
+
+                <div class="section">
+                    <h3>Extracted Entities</h3>
+                    <div id="entities"></div>
+                </div>
+                
+                <div class="section">
+                    <h3>Extracted Text (Privacy-Protected)</h3>
+                    <div id="user-blur-info" style="display: none; background: #fef3c7; border-left: 4px solid #f59e0b; padding: 0.75rem; border-radius: 4px; margin-bottom: 1rem; font-size: 0.9rem; color: #92400e;">
+                        <strong>👁️ You manually blurred <span id="user-blur-count">0</span> word(s).</strong> These appear as <code>[BLURRED]</code> below.
+                    </div>
+                    <pre id="redacted-text"></pre>
+                </div>
+
+                <button id="reset-btn" class="btn">Analyze Another Message</button>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        const uploadArea = document.getElementById('upload-area');
+        const fileInput = document.getElementById('file-input');
+        const imageEditor = document.getElementById('image-editor');
+        const editorCanvas = document.getElementById('editor-canvas');
+        const ctx = editorCanvas.getContext('2d');
+        const toggleEditMode = document.getElementById('toggle-edit-mode');
+        const resetEditor = document.getElementById('reset-editor');
+        const analyzeBtn = document.getElementById('analyze-btn');
+        const blurCounter = document.getElementById('blur-counter');
+        const loading = document.getElementById('loading');
+        const results = document.getElementById('results');
+        const resetBtn = document.getElementById('reset-btn');
+
+        let originalImage = null;
+        let originalFile = null;
+        let editMode = false;
+        let isDrawing = false;
+        let startX = 0, startY = 0;
+        let rectangles = [];
+        let canvasScale = 1;  // Scale factor between canvas and original image
+
+        // Upload handlers
+        uploadArea.addEventListener('click', () => fileInput.click());
+        uploadArea.addEventListener('dragover', (e) => { e.preventDefault(); uploadArea.classList.add('dragover'); });
+        uploadArea.addEventListener('dragleave', () => uploadArea.classList.remove('dragover'));
+        uploadArea.addEventListener('drop', (e) => {
+            e.preventDefault(); uploadArea.classList.remove('dragover');
+            if (e.dataTransfer.files.length) handleFile(e.dataTransfer.files[0]);
+        });
+        fileInput.addEventListener('change', (e) => { if (e.target.files.length) handleFile(e.target.files[0]); });
+
+        // Editor handlers
+        toggleEditMode.addEventListener('click', () => {
+            editMode = !editMode;
+            toggleEditMode.classList.toggle('active');
+            toggleEditMode.textContent = editMode ? '✓ Blur Tool Active' : '🖊️ Enable Blur Tool';
+            resetEditor.disabled = !editMode;
+            editorCanvas.style.cursor = editMode ? 'crosshair' : 'default';
+        });
+
+        resetEditor.addEventListener('click', () => {
+            rectangles = [];
+            drawImage();
+            updateBlurCounter();
+        });
+
+        analyzeBtn.addEventListener('click', () => {
+            if (!originalFile) return;
+            
+            // Scale rectangles back to original image coordinates
+            const scaledRectangles = rectangles.map(r => ({
+                x: r.x / canvasScale,
+                y: r.y / canvasScale,
+                width: r.width / canvasScale,
+                height: r.height / canvasScale
+            }));
+            
+            const formData = new FormData();
+            formData.append('file', originalFile);
+            formData.append('blur_rectangles', JSON.stringify(scaledRectangles));
+            
+            imageEditor.style.display = 'none';
+            loading.style.display = 'block';
+            
+            fetch('/upload/', { method: 'POST', body: formData })
+                .then(response => response.json())
+                .then(data => displayResults(data))
+                .catch(error => {
+                    alert('Error analyzing image: ' + error.message);
+                    imageEditor.style.display = 'none';
+                    uploadArea.style.display = 'block';
+                })
+                .finally(() => loading.style.display = 'none');
+        });
+
+        resetBtn.addEventListener('click', () => {
+            results.style.display = 'none';
+            uploadArea.style.display = 'block';
+            fileInput.value = '';
+            originalImage = null;
+            originalFile = null;
+            imageEditor.style.display = 'none';
+            rectangles = [];
+            editMode = false;
+            toggleEditMode.classList.remove('active');
+            toggleEditMode.textContent = '🖊️ Enable Blur Tool';
+            updateBlurCounter();
+        });
+
+        // Canvas drawing handlers
+        editorCanvas.addEventListener('mousedown', (e) => {
+            if (!editMode) return;
+            isDrawing = true;
+            const rect = editorCanvas.getBoundingClientRect();
+            startX = e.clientX - rect.left;
+            startY = e.clientY - rect.top;
+        });
+
+        editorCanvas.addEventListener('mousemove', (e) => {
+            if (!isDrawing || !editMode) return;
+            const rect = editorCanvas.getBoundingClientRect();
+            const currentX = e.clientX - rect.left;
+            const currentY = e.clientY - rect.top;
+            
+            drawImage();
+            drawRectangles();
+            
+            // Draw preview rectangle
+            ctx.strokeStyle = '#ef4444';
+            ctx.lineWidth = 2;
+            ctx.setLineDash([5, 5]);
+            ctx.strokeRect(startX, startY, currentX - startX, currentY - startY);
+            ctx.setLineDash([]);
+        });
+
+        editorCanvas.addEventListener('mouseup', (e) => {
+            if (!isDrawing || !editMode) return;
+            isDrawing = false;
+            const rect = editorCanvas.getBoundingClientRect();
+            const endX = e.clientX - rect.left;
+            const endY = e.clientY - rect.top;
+            
+            const newRect = {
+                x: Math.min(startX, endX),
+                y: Math.min(startY, endY),
+                width: Math.abs(endX - startX),
+                height: Math.abs(endY - startY)
+            };
+            
+            // Only add if it's a reasonable size (not a click)
+            if (newRect.width > 10 && newRect.height > 10) {
+                rectangles.push(newRect);
+                updateBlurCounter();
+            }
+            
+            drawImage();
+            drawRectangles();
+        });
+
+        function handleFile(file) {
+            if (!file.type.startsWith('image/')) { alert('Please upload an image file.'); return; }
+            originalFile = file;
+            
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                const img = new Image();
+                img.onload = () => {
+                    originalImage = img;
+                    
+                    // Scale image to fit canvas (max width 800px)
+                    const maxWidth = 800;
+                    canvasScale = Math.min(maxWidth / img.width, 1);
+                    editorCanvas.width = img.width * canvasScale;
+                    editorCanvas.height = img.height * canvasScale;
+                    
+                    drawImage();
+                    
+                    uploadArea.style.display = 'none';
+                    imageEditor.style.display = 'block';
+                };
+                img.src = e.target.result;
+            };
+            reader.readAsDataURL(file);
+        }
+
+        function drawImage() {
+            if (!originalImage) return;
+            ctx.drawImage(originalImage, 0, 0, editorCanvas.width, editorCanvas.height);
+        }
+
+        function drawRectangles() {
+            ctx.strokeStyle = '#ef4444';
+            ctx.lineWidth = 2;
+            ctx.fillStyle = 'rgba(239, 68, 68, 0.2)';
+            rectangles.forEach(rect => {
+                ctx.fillRect(rect.x, rect.y, rect.width, rect.height);
+                ctx.strokeRect(rect.x, rect.y, rect.width, rect.height);
+            });
+        }
+
+        function updateBlurCounter() {
+            if (rectangles.length > 0) {
+                blurCounter.style.display = 'inline-block';
+                blurCounter.textContent = `${rectangles.length} region${rectangles.length > 1 ? 's' : ''} marked`;
+            } else {
+                blurCounter.style.display = 'none';
+            }
+        }
+
+        function displayResults(data) {
+            const report = data.trust_report;
+            const score = report.risk_score;
+            let theme = 'theme-safe';
+            if (score >= 70) theme = 'theme-danger';
+            else if (score >= 30) theme = 'theme-suspicious';
+            results.className = `results ${theme}`;
+
+            document.getElementById('score-value').textContent = score + '%';
+            document.getElementById('category').textContent = report.category;
+            document.getElementById('recommendation').textContent = report.recommendation;
+            
+            const reasonsList = document.getElementById('reasons-list');
+            reasonsList.innerHTML = '';
+            report.reasons.forEach(reason => {
+                const li = document.createElement('li');
+                li.textContent = reason;
+                reasonsList.appendChild(li);
+            });
+
+            const entitiesDiv = document.getElementById('entities');
+            entitiesDiv.innerHTML = '';
+            const entities = data.entities;
+            if (entities.urls.length > 0) entitiesDiv.innerHTML += `<p><strong>URLs:</strong> ${entities.urls.join(', ')}</p>`;
+            if (entities.phone_numbers.length > 0) entitiesDiv.innerHTML += `<p><strong>Phone Numbers:</strong> ${entities.phone_numbers.join(', ')}</p>`;
+            if (entities.upi_ids.length > 0) entitiesDiv.innerHTML += `<p><strong>UPI IDs:</strong> ${entities.upi_ids.join(', ')}</p>`;
+            if (entitiesDiv.innerHTML === '') entitiesDiv.innerHTML = '<p style="color: var(--text-muted);">No sensitive entities detected.</p>';
+
+            // Display extracted text with [BLURRED] markers highlighted
+            const extractedText = data.extracted_text;
+            const redactedPre = document.getElementById('redacted-text');
+            
+            // Highlight [BLURRED] markers in the text
+            const highlightedText = extractedText.replace(
+                /\[BLURRED\]/g,
+                '<span class="blurred-word">[BLURRED]</span>'
+            );
+            redactedPre.innerHTML = highlightedText;
+            
+            // Show user blur info if applicable
+            const userBlurInfo = document.getElementById('user-blur-info');
+            if (data.user_blur_count > 0) {
+                userBlurInfo.style.display = 'block';
+                document.getElementById('user-blur-count').textContent = data.user_blur_count;
+            } else {
+                userBlurInfo.style.display = 'none';
+            }
+
+            const qrSection = document.getElementById('qr-section');
+            if (data.highlighted_image && data.qr_analysis && data.qr_analysis.length > 0) {
+                qrSection.style.display = 'block';
+                document.getElementById('qr-image-container').innerHTML = `<img src="${data.highlighted_image}" style="max-width: 100%; border-radius: 8px; border: 2px solid #10b981;">`;
+                
+                let qrHtml = '';
+                data.qr_analysis.forEach(qr => {
+                    qrHtml += `<div class="qr-intent-card">`;
+                    qrHtml += `<h4>Intent: ${qr.intent}</h4>`;
+                    if (qr.warning) qrHtml += `<p class="qr-warning">${qr.warning}</p>`;
+                    if (qr.intent === 'URL') qrHtml += `<p><strong>Page Title:</strong> "${qr.metadata.title}"</p>`;
+                    else if (qr.intent === 'UPI_PAYMENT') {
+                        qrHtml += `<p><strong>Payee:</strong> ${qr.metadata.payee_name}</p>`;
+                        qrHtml += `<p><strong>Amount:</strong> ₹${qr.metadata.amount}</p>`;
+                    }
+                    qrHtml += `</div>`;
+                });
+                document.getElementById('qr-analysis').innerHTML = qrHtml;
+            } else {
+                qrSection.style.display = 'none';
+            }
+
+            results.style.display = 'block';
+        }
+    </script>
+</body>
+</html>

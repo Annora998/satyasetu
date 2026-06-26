@@ -1,0 +1,62 @@
+======================================================================
+SATYASETU TEST REPORT
+======================================================================
+
+Test Run: 2026-06-19T20:51:51.239681
+Dataset: 90 scams, 60 legitimate
+
+----------------------------------------------------------------------
+KEY METRICS
+----------------------------------------------------------------------
+Overall Accuracy:    86.0%
+Precision:           94.81%
+Recall:              81.11%
+F1 Score:            87.43
+Avg Processing Time: 1.89s
+
+----------------------------------------------------------------------
+SCAM DETECTION
+----------------------------------------------------------------------
+Total Scams:         90
+Correctly Detected:  73
+Missed:              17
+Average Risk Score:  81.56
+
+----------------------------------------------------------------------
+LEGITIMATE MESSAGE HANDLING
+----------------------------------------------------------------------
+Total Legit:         60
+Correctly Passed:    56
+False Positives:     4
+Average Risk Score:  8.42
+
+----------------------------------------------------------------------
+PROBLEMATIC CASES
+----------------------------------------------------------------------
+
+Missed Scams (risk_score < 70):
+  - comprehensive_scam_24.png (score: 10, category: Likely Safe)
+  - comprehensive_scam_28.png (score: 65, category: Courier Scam)
+  - comprehensive_scam_45.png (score: 0, category: Likely Safe)
+  - comprehensive_scam_49.png (score: 45, category: Unknown)
+  - comprehensive_scam_51.png (score: 10, category: Likely Safe)
+  - comprehensive_scam_52.png (score: 65, category: Unknown)
+  - comprehensive_scam_53.png (score: 45, category: Unknown)
+  - comprehensive_scam_55.png (score: 0, category: Likely Safe)
+  - comprehensive_scam_56.png (score: 10, category: Likely Safe)
+  - comprehensive_scam_59.png (score: 60, category: Suspicious Message)
+  - comprehensive_scam_61.png (score: 0, category: Likely Safe)
+  - comprehensive_scam_64.png (score: 0, category: Likely Safe)
+  - comprehensive_scam_66.png (score: 0, category: Likely Safe)
+  - comprehensive_scam_72.png (score: 0, category: Likely Safe)
+  - comprehensive_scam_73.png (score: 0, category: Likely Safe)
+  - comprehensive_scam_75.png (score: 10, category: Likely Safe)
+  - comprehensive_scam_78.png (score: 10, category: Likely Safe)
+
+False Positives (legit flagged as scam):
+  - comprehensive_legit_40.png (score: 75, category: Reward Scam)
+  - comprehensive_legit_47.png (score: 75, category: Banking Scam)
+  - comprehensive_legit_49.png (score: 75, category: Banking Scam)
+  - comprehensive_legit_50.png (score: 55, category: Banking Scam)
+
+======================================================================

@@ -1,0 +1,48 @@
+======================================================================
+SATYASETU TEST REPORT
+======================================================================
+
+Test Run: 2026-06-19T19:12:45.396344
+Dataset: 30 scams, 20 legitimate
+
+----------------------------------------------------------------------
+KEY METRICS
+----------------------------------------------------------------------
+Overall Accuracy:    86.0%
+Precision:           96.0%
+Recall:              80.0%
+F1 Score:            87.27
+Avg Processing Time: 1.93s
+
+----------------------------------------------------------------------
+SCAM DETECTION
+----------------------------------------------------------------------
+Total Scams:         30
+Correctly Detected:  24
+Missed:              6
+Average Risk Score:  84.5
+
+----------------------------------------------------------------------
+LEGITIMATE MESSAGE HANDLING
+----------------------------------------------------------------------
+Total Legit:         20
+Correctly Passed:    19
+False Positives:     1
+Average Risk Score:  4.75
+
+----------------------------------------------------------------------
+PROBLEMATIC CASES
+----------------------------------------------------------------------
+
+Missed Scams (risk_score < 70):
+  - indian_scam_06.png (score: 45, category: Unknown)
+  - indian_scam_07.png (score: 65, category: Unknown)
+  - indian_scam_08.png (score: 0, category: Likely Safe)
+  - indian_scam_13.png (score: 45, category: Unknown)
+  - indian_scam_18.png (score: 65, category: Courier Scam)
+  - indian_scam_28.png (score: 0, category: Likely Safe)
+
+False Positives (legit flagged as scam):
+  - indian_legit_05.png (score: 75, category: Banking Scam)
+
+======================================================================

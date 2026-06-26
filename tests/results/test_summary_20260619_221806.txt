@@ -1,0 +1,183 @@
+======================================================================
+SATYASETU TEST REPORT
+======================================================================
+
+Test Run: 2026-06-19T22:18:06.881447
+Dataset: 280 scams, 120 legitimate
+
+----------------------------------------------------------------------
+KEY METRICS
+----------------------------------------------------------------------
+Overall Accuracy:    76.0%
+Precision:           98.42%
+Recall:              66.79%
+F1 Score:            79.58
+Avg Processing Time: 2.34s
+
+----------------------------------------------------------------------
+SCAM DETECTION
+----------------------------------------------------------------------
+Total Scams:         280
+Correctly Detected:  187
+Missed:              93
+Average Risk Score:  57.64
+
+----------------------------------------------------------------------
+LEGITIMATE MESSAGE HANDLING
+----------------------------------------------------------------------
+Total Legit:         120
+Correctly Passed:    117
+False Positives:     3
+Average Risk Score:  1.0
+
+----------------------------------------------------------------------
+PROBLEMATIC CASES
+----------------------------------------------------------------------
+
+Missed Scams (risk_score < 70):
+  - massive_scam_004.png (score: 65, category: Unknown)
+  - massive_scam_013.png (score: 0, category: Likely Safe)
+  - massive_scam_016.png (score: 0, category: Likely Safe)
+  - massive_scam_019.png (score: 0, category: Likely Safe)
+  - massive_scam_020.png (score: 50, category: Unknown)
+  - massive_scam_022.png (score: 25, category: Likely Safe)
+  - massive_scam_023.png (score: 0, category: Likely Safe)
+  - massive_scam_024.png (score: 50, category: Unknown)
+  - massive_scam_026.png (score: 25, category: Likely Safe)
+  - massive_scam_027.png (score: 0, category: Likely Safe)
+  - massive_scam_028.png (score: 25, category: Likely Safe)
+  - massive_scam_030.png (score: 50, category: Unknown)
+  - massive_scam_032.png (score: 25, category: Likely Safe)
+  - massive_scam_033.png (score: 45, category: Bank KYC Scam)
+  - massive_scam_034.png (score: 25, category: Likely Safe)
+  - massive_scam_036.png (score: 25, category: Likely Safe)
+  - massive_scam_037.png (score: 0, category: Likely Safe)
+  - massive_scam_038.png (score: 40, category: Unknown)
+  - massive_scam_040.png (score: 25, category: Likely Safe)
+  - massive_scam_050.png (score: 40, category: Unknown)
+  - massive_scam_055.png (score: 65, category: Unknown)
+  - massive_scam_056.png (score: 0, category: Likely Safe)
+  - massive_scam_057.png (score: 25, category: Likely Safe)
+  - massive_scam_059.png (score: 50, category: Unknown)
+  - massive_scam_060.png (score: 0, category: Likely Safe)
+  - massive_scam_061.png (score: 50, category: Unknown)
+  - massive_scam_063.png (score: 65, category: Unknown)
+  - massive_scam_064.png (score: 0, category: Likely Safe)
+  - massive_scam_065.png (score: 25, category: Likely Safe)
+  - massive_scam_067.png (score: 50, category: Unknown)
+  - massive_scam_068.png (score: 0, category: Likely Safe)
+  - massive_scam_069.png (score: 25, category: Likely Safe)
+  - massive_scam_071.png (score: 50, category: Unknown)
+  - massive_scam_072.png (score: 35, category: Unknown)
+  - massive_scam_073.png (score: 25, category: Likely Safe)
+  - massive_scam_075.png (score: 40, category: Unknown)
+  - massive_scam_076.png (score: 0, category: Likely Safe)
+  - massive_scam_077.png (score: 25, category: Likely Safe)
+  - massive_scam_079.png (score: 50, category: Unknown)
+  - massive_scam_080.png (score: 0, category: Likely Safe)
+  - massive_scam_083.png (score: 60, category: Courier Scam)
+  - massive_scam_084.png (score: 0, category: Likely Safe)
+  - massive_scam_089.png (score: 0, category: Likely Safe)
+  - massive_scam_092.png (score: 0, category: Likely Safe)
+  - massive_scam_093.png (score: 25, category: Likely Safe)
+  - massive_scam_095.png (score: 25, category: Likely Safe)
+  - massive_scam_096.png (score: 0, category: Likely Safe)
+  - massive_scam_097.png (score: 40, category: Unknown)
+  - massive_scam_100.png (score: 0, category: Likely Safe)
+  - massive_scam_101.png (score: 25, category: Likely Safe)
+  - massive_scam_103.png (score: 25, category: Likely Safe)
+  - massive_scam_104.png (score: 0, category: Likely Safe)
+  - massive_scam_105.png (score: 25, category: Likely Safe)
+  - massive_scam_108.png (score: 0, category: Likely Safe)
+  - massive_scam_109.png (score: 25, category: Likely Safe)
+  - massive_scam_115.png (score: 0, category: Likely Safe)
+  - massive_scam_118.png (score: 25, category: Likely Safe)
+  - massive_scam_119.png (score: 50, category: Government Scam)
+  - massive_scam_123.png (score: 50, category: Unknown)
+  - massive_scam_124.png (score: 50, category: Lottery Scam)
+  - massive_scam_125.png (score: 25, category: Likely Safe)
+  - massive_scam_127.png (score: 25, category: Likely Safe)
+  - massive_scam_128.png (score: 50, category: Lottery Scam)
+  - massive_scam_132.png (score: 0, category: Likely Safe)
+  - massive_scam_135.png (score: 65, category: Unknown)
+  - massive_scam_136.png (score: 0, category: Likely Safe)
+  - massive_scam_139.png (score: 25, category: Likely Safe)
+  - massive_scam_140.png (score: 0, category: Likely Safe)
+  - massive_scam_145.png (score: 0, category: Likely Safe)
+  - massive_scam_146.png (score: 65, category: Unknown)
+  - massive_scam_148.png (score: 65, category: Unknown)
+  - massive_scam_149.png (score: 35, category: Phishing Scam)
+  - massive_scam_151.png (score: 50, category: Unknown)
+  - massive_scam_152.png (score: 0, category: Likely Safe)
+  - massive_scam_153.png (score: 25, category: Likely Safe)
+  - massive_scam_155.png (score: 25, category: Likely Safe)
+  - massive_scam_156.png (score: 0, category: Likely Safe)
+  - massive_scam_157.png (score: 25, category: Likely Safe)
+  - massive_scam_159.png (score: 40, category: Unknown)
+  - massive_scam_160.png (score: 0, category: Likely Safe)
+  - massive_scam_161.png (score: 25, category: Likely Safe)
+  - massive_scam_163.png (score: 25, category: Likely Safe)
+  - massive_scam_164.png (score: 0, category: Likely Safe)
+  - massive_scam_165.png (score: 25, category: Likely Safe)
+  - massive_scam_167.png (score: 50, category: Unknown)
+  - massive_scam_168.png (score: 0, category: Likely Safe)
+  - massive_scam_169.png (score: 25, category: Likely Safe)
+  - massive_scam_171.png (score: 50, category: E-Challan Scam)
+  - massive_scam_173.png (score: 50, category: E-Challan Scam)
+  - massive_scam_176.png (score: 50, category: E-Challan Scam)
+  - massive_scam_182.png (score: 0, category: Likely Safe)
+  - massive_scam_185.png (score: 25, category: Likely Safe)
+  - massive_scam_186.png (score: 50, category: E-Challan Scam)
+  - massive_scam_187.png (score: 25, category: Likely Safe)
+  - massive_scam_190.png (score: 50, category: E-Challan Scam)
+  - massive_scam_191.png (score: 25, category: Likely Safe)
+  - massive_scam_192.png (score: 50, category: E-Challan Scam)
+  - massive_scam_193.png (score: 25, category: Likely Safe)
+  - massive_scam_194.png (score: 0, category: Likely Safe)
+  - massive_scam_195.png (score: 25, category: Likely Safe)
+  - massive_scam_197.png (score: 25, category: Likely Safe)
+  - massive_scam_198.png (score: 50, category: E-Challan Scam)
+  - massive_scam_201.png (score: 50, category: Utility Scam)
+  - massive_scam_204.png (score: 50, category: Utility Scam)
+  - massive_scam_206.png (score: 50, category: Utility Scam)
+  - massive_scam_208.png (score: 50, category: Unknown)
+  - massive_scam_209.png (score: 25, category: Likely Safe)
+  - massive_scam_212.png (score: 50, category: Utility Scam)
+  - massive_scam_213.png (score: 25, category: Likely Safe)
+  - massive_scam_215.png (score: 25, category: Likely Safe)
+  - massive_scam_216.png (score: 0, category: Likely Safe)
+  - massive_scam_217.png (score: 25, category: Likely Safe)
+  - massive_scam_220.png (score: 0, category: Likely Safe)
+  - massive_scam_221.png (score: 25, category: Likely Safe)
+  - massive_scam_223.png (score: 25, category: Likely Safe)
+  - massive_scam_224.png (score: 0, category: Likely Safe)
+  - massive_scam_228.png (score: 50, category: Utility Scam)
+  - massive_scam_229.png (score: 25, category: Likely Safe)
+  - massive_scam_232.png (score: 50, category: Job Scam)
+  - massive_scam_235.png (score: 50, category: Job Scam)
+  - massive_scam_238.png (score: 0, category: Likely Safe)
+  - massive_scam_240.png (score: 50, category: Unknown)
+  - massive_scam_242.png (score: 0, category: Likely Safe)
+  - massive_scam_243.png (score: 25, category: Likely Safe)
+  - massive_scam_245.png (score: 0, category: Likely Safe)
+  - massive_scam_248.png (score: 0, category: Likely Safe)
+  - massive_scam_249.png (score: 50, category: Unknown)
+  - massive_scam_251.png (score: 0, category: Likely Safe)
+  - massive_scam_252.png (score: 25, category: Likely Safe)
+  - massive_scam_254.png (score: 0, category: Likely Safe)
+  - massive_scam_255.png (score: 25, category: Likely Safe)
+  - massive_scam_256.png (score: 50, category: Lottery Scam)
+  - massive_scam_258.png (score: 50, category: Lottery Scam)
+  - massive_scam_261.png (score: 50, category: Lottery Scam)
+  - massive_scam_264.png (score: 50, category: Lottery Scam)
+  - massive_scam_267.png (score: 50, category: Lottery Scam)
+  - massive_scam_271.png (score: 50, category: Lottery Scam)
+  - massive_scam_275.png (score: 50, category: Lottery Scam)
+  - massive_scam_279.png (score: 50, category: Lottery Scam)
+
+False Positives (legit flagged as scam):
+  - massive_legit_081.png (score: 35, category: Unknown)
+  - massive_legit_084.png (score: 35, category: Unknown)
+  - massive_legit_086.png (score: 35, category: Unknown)
+
+======================================================================

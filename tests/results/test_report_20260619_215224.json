@@ -1,0 +1,3258 @@
+{
+  "test_run": {
+    "timestamp": "2026-06-19T21:52:24.939419",
+    "api_url": "http://127.0.0.1:8000/upload/",
+    "scam_dataset_size": 90,
+    "legit_dataset_size": 60
+  },
+  "metrics": {
+    "total_tests": 150,
+    "successful_tests": 150,
+    "failed_tests": 0,
+    "scam_total": 90,
+    "scam_detected": 81,
+    "scam_missed": 9,
+    "scam_avg_score": 74.44,
+    "legit_total": 60,
+    "legit_correct": 57,
+    "legit_flagged": 3,
+    "legit_avg_score": 2.0,
+    "accuracy": 92.0,
+    "precision": 96.43,
+    "recall": 90.0,
+    "f1_score": 93.1,
+    "avg_processing_time": 2.02
+  },
+  "scam_results": [
+    {
+      "file": "comprehensive_scam_81.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Lottery Scam",
+      "risk_score": 50,
+      "reasons": [
+        "\ud83d\udea8 LOTTERY SCAM: Unsolicited prize demanding action"
+      ],
+      "recommendation": "Exercise caution. Verify using the official app.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [
+          "+91-9876543210"
+        ],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 3.643003225326538
+    },
+    {
+      "file": "comprehensive_scam_82.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Lottery Scam",
+      "risk_score": 75,
+      "reasons": [
+        "\ud83d\udea8 LOTTERY SCAM: Unsolicited prize demanding action",
+        "\u2713 Short message with link (suspicious)",
+        "\u2713 Contains a link"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: LOTTERY SCAM. You can't win what you didn't enter.",
+      "entities": {
+        "urls": [
+          "lucky-draw-w.in.in"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.223069190979004
+    },
+    {
+      "file": "comprehensive_scam_83.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Lottery Scam",
+      "risk_score": 50,
+      "reasons": [
+        "\ud83d\udea8 LOTTERY SCAM: Unsolicited prize demanding action"
+      ],
+      "recommendation": "Exercise caution. Verify using the official app.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3350279331207275
+    },
+    {
+      "file": "comprehensive_scam_84.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Lottery Scam",
+      "risk_score": 100,
+      "reasons": [
+        "\ud83d\udea8 LOTTERY SCAM: Unsolicited prize demanding action",
+        "\u2713 Short message with link (suspicious)",
+        "\u2713 Contains a link",
+        "\u2713 High-risk TLD"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: LOTTERY SCAM. You can't win what you didn't enter.",
+      "entities": {
+        "urls": [
+          "lottery-agent.xyz"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.6775224208831787
+    },
+    {
+      "file": "comprehensive_scam_85.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Lottery Scam",
+      "risk_score": 75,
+      "reasons": [
+        "\ud83d\udea8 LOTTERY SCAM: Unsolicited prize demanding action",
+        "\u2713 Short message with link (suspicious)",
+        "\u2713 Contains a link"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: LOTTERY SCAM. You can't win what you didn't enter.",
+      "entities": {
+        "urls": [
+          "mega-lottery.in"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.2111129760742188
+    },
+    {
+      "file": "comprehensive_scam_86.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Lottery Scam",
+      "risk_score": 50,
+      "reasons": [
+        "\ud83d\udea8 LOTTERY SCAM: Unsolicited prize demanding action"
+      ],
+      "recommendation": "Exercise caution. Verify using the official app.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3030686378479004
+    },
+    {
+      "file": "comprehensive_scam_87.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Lottery Scam",
+      "risk_score": 100,
+      "reasons": [
+        "\ud83d\udea8 LOTTERY SCAM: Unsolicited prize demanding action",
+        "\u2713 Short message with link (suspicious)",
+        "\u2713 Contains a link",
+        "\u2713 High-risk TLD",
+        "\u2713 Suspicious URL keyword"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: LOTTERY SCAM. You can't win what you didn't enter.",
+      "entities": {
+        "urls": [
+          "lottery-claim.xyz"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.8202497959136963
+    },
+    {
+      "file": "comprehensive_scam_88.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Lottery Scam",
+      "risk_score": 75,
+      "reasons": [
+        "\ud83d\udea8 LOTTERY SCAM: Unsolicited prize demanding action",
+        "\u2713 Short message with link (suspicious)",
+        "\u2713 Contains a link"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: LOTTERY SCAM. You can't win what you didn't enter.",
+      "entities": {
+        "urls": [
+          "car-lottery.in"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.1920363903045654
+    },
+    {
+      "file": "comprehensive_scam_89.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Lottery Scam",
+      "risk_score": 50,
+      "reasons": [
+        "\ud83d\udea8 LOTTERY SCAM: Unsolicited prize demanding action"
+      ],
+      "recommendation": "Exercise caution. Verify using the official app.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.2870104312896729
+    },
+    {
+      "file": "comprehensive_scam_90.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Lottery Scam",
+      "risk_score": 100,
+      "reasons": [
+        "\ud83d\udea8 LOTTERY SCAM: Unsolicited prize demanding action",
+        "\u2713 Short message with link (suspicious)",
+        "\u2713 Contains a link",
+        "\u2713 High-risk TLD"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: LOTTERY SCAM. You can't win what you didn't enter.",
+      "entities": {
+        "urls": [
+          "lottery-winner.xyz"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.754293441772461
+    },
+    {
+      "file": "comprehensive_scam_01.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Bank KYC Scam",
+      "risk_score": 100,
+      "reasons": [
+        "\ud83d\udea8 KYC/ACCOUNT THREAT: Urges action to avoid account closure",
+        "\u2713 Contains a link",
+        "\u2713 Layer 2: Brand keyword 'hdfc'",
+        "\u2713 Layer 2: High entropy",
+        "\u26a0 Mismatch: Text mentions ['hdfc'] but URL is 'hdfc-kyc-update.com'.",
+        "\u2713 Suspicious URL path",
+        "\u2713 Suspicious URL keyword"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Banks never ask for KYC via SMS.",
+      "entities": {
+        "urls": [
+          "hdfc-kyc-update.com/verify"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.7163102626800537
+    },
+    {
+      "file": "comprehensive_scam_02.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Bank KYC Scam",
+      "risk_score": 100,
+      "reasons": [
+        "\ud83d\udea8 KYC/ACCOUNT THREAT: Urges action to avoid account closure",
+        "\u2713 Short message with link (suspicious)",
+        "\u2713 Contains a link",
+        "\u2713 Layer 2: Brand keyword 'sbi'",
+        "\u26a0 Mismatch: Text mentions ['sbi'] but URL is 'sbi-pan-update.in'.",
+        "\u2713 Suspicious URL path",
+        "\u2713 Suspicious URL keyword"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Banks never ask for KYC via SMS.",
+      "entities": {
+        "urls": [
+          "sbi-pan-update.in/urgent"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.512244939804077
+    },
+    {
+      "file": "comprehensive_scam_03.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Bank KYC Scam",
+      "risk_score": 100,
+      "reasons": [
+        "\ud83d\udea8 KYC/ACCOUNT THREAT: Urges action to avoid account closure",
+        "\u2713 Short message with link (suspicious)",
+        "\u2713 Contains a link",
+        "\u2713 Layer 2: Brand keyword 'icici'",
+        "\u26a0 Mismatch: Text mentions ['icici'] but URL is 'icici-kyc-verify.com'.",
+        "\u2713 Suspicious URL keyword"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Banks never ask for KYC via SMS.",
+      "entities": {
+        "urls": [
+          "icici-kyc-verify.com"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 4.052958250045776
+    },
+    {
+      "file": "comprehensive_scam_04.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Unknown",
+      "risk_score": 65,
+      "reasons": [
+        "\u2713 Short message with link (suspicious)",
+        "\u2713 Contains a link",
+        "\u2713 Layer 2: High entropy",
+        "\u2713 Suspicious URL keyword"
+      ],
+      "recommendation": "Exercise caution. Verify using the official app.",
+      "entities": {
+        "urls": [
+          "kyc-update-urgent.in"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.09645938873291
+    },
+    {
+      "file": "comprehensive_scam_05.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Phishing Scam",
+      "risk_score": 95,
+      "reasons": [
+        "\u2713 Short message with link (suspicious)",
+        "\u2713 Contains a link",
+        "\u2713 Layer 2: High entropy",
+        "\u2713 Suspicious URL path",
+        "\u2713 Suspicious URL keyword"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Phishing attempt. Use official app.",
+      "entities": {
+        "urls": [
+          "bank-kyc-verify.net/complete"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.6316840648651123
+    },
+    {
+      "file": "comprehensive_scam_06.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Phishing Scam",
+      "risk_score": 100,
+      "reasons": [
+        "\ud83d\udea8 PHISHING: Demands verification via suspicious link",
+        "\u2713 Short message with link (suspicious)",
+        "\u2713 Contains a link",
+        "\u2713 Layer 2: High entropy",
+        "\u2713 Suspicious URL path"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Phishing attempt. Use official app.",
+      "entities": {
+        "urls": [
+          "rbi-kyc-mandate.com/update"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.7449731826782227
+    },
+    {
+      "file": "comprehensive_scam_07.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Phishing Scam",
+      "risk_score": 85,
+      "reasons": [
+        "\u2713 Short message with link (suspicious)",
+        "\u2713 Contains a link",
+        "\u2713 High-risk TLD",
+        "\u2713 Suspicious URL keyword"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Phishing attempt. Use official app.",
+      "entities": {
+        "urls": [
+          "pan-kyc-update.xyz"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.714158296585083
+    },
+    {
+      "file": "comprehensive_scam_08.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Bank KYC Scam",
+      "risk_score": 70,
+      "reasons": [
+        "\ud83d\udea8 KYC/ACCOUNT THREAT: Urges action to avoid account closure",
+        "\u2713 Short message with link (suspicious)",
+        "\u2713 Contains a link"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Banks never ask for KYC via SMS.",
+      "entities": {
+        "urls": [
+          "kyc-reminder.in"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.1918106079101562
+    },
+    {
+      "file": "comprehensive_scam_09.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Phishing Scam",
+      "risk_score": 85,
+      "reasons": [
+        "\u2713 Short message with link (suspicious)",
+        "\u2713 Contains a link",
+        "\u2713 Layer 2: High entropy",
+        "\u2713 Suspicious URL path"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Phishing attempt. Use official app.",
+      "entities": {
+        "urls": [
+          "kyc-resubmit.cc/upload"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.9277753829956055
+    },
+    {
+      "file": "comprehensive_scam_10.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Bank KYC Scam",
+      "risk_score": 70,
+      "reasons": [
+        "\ud83d\udea8 KYC/ACCOUNT THREAT: Urges action to avoid account closure",
+        "\u2713 Short message with link (suspicious)",
+        "\u2713 Contains a link"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Banks never ask for KYC via SMS.",
+      "entities": {
+        "urls": [
+          "final-kyc-notice.com"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.6739327907562256
+    },
+    {
+      "file": "comprehensive_scam_11.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Phishing Scam",
+      "risk_score": 100,
+      "reasons": [
+        "\u2713 Short message with link (suspicious)",
+        "\u2713 Contains a link",
+        "\u2713 Layer 2: Brand keyword 'sbi'",
+        "\u26a0 Mismatch: Text mentions ['sbi'] but URL is 'sbi-secure-log.in.net'.",
+        "\u2713 Suspicious URL path",
+        "\u2713 Suspicious URL keyword"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Phishing attempt. Use official app.",
+      "entities": {
+        "urls": [
+          "sbi-secure-log.in.net/check"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.744795322418213
+    },
+    {
+      "file": "comprehensive_scam_12.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Unknown",
+      "risk_score": 95,
+      "reasons": [
+        "\u2713 Short message with link (suspicious)",
+        "\u2713 Contains a link",
+        "\u2713 Layer 2: Brand keyword 'icici'",
+        "\u26a0 Mismatch: Text mentions ['icici'] but URL is 'icici-verify.com'.",
+        "\u2713 Suspicious URL keyword"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Confirmed scam pattern.",
+      "entities": {
+        "urls": [
+          "icici-verify.com/og.in"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.5493693351745605
+    },
+    {
+      "file": "comprehensive_scam_13.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Unknown",
+      "risk_score": 100,
+      "reasons": [
+        "\u2713 Short message with link (suspicious)",
+        "\u2713 Contains a link",
+        "\u2713 Layer 2: Brand keyword 'hdfc'",
+        "\u2713 Layer 2: High entropy",
+        "\u26a0 Mismatch: Text mentions ['hdfc'] but URL is 'hdfc-statement-view.com'."
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Confirmed scam pattern.",
+      "entities": {
+        "urls": [
+          "hdfc-statement-view.com/log.in"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.5838541984558105
+    },
+    {
+      "file": "comprehensive_scam_14.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Unknown",
+      "risk_score": 100,
+      "reasons": [
+        "\ud83d\udea8 Suspicious OTP request",
+        "\u2713 Short message with link (suspicious)",
+        "\u2713 Contains a link",
+        "\u2713 Layer 2: Brand keyword 'axis'",
+        "\u2713 Layer 2: High entropy",
+        "\u26a0 Mismatch: Text mentions ['axis'] but URL is 'axis-otp-verify.net'.",
+        "\u2713 Suspicious URL keyword"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Confirmed scam pattern.",
+      "entities": {
+        "urls": [
+          "axis-otp-verify.net"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.58255934715271
+    },
+    {
+      "file": "comprehensive_scam_15.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Phishing Scam",
+      "risk_score": 100,
+      "reasons": [
+        "\u2713 Short message with link (suspicious)",
+        "\u2713 Contains a link",
+        "\u2713 Layer 2: Brand keyword 'hdfc'",
+        "\u26a0 Mismatch: Text mentions ['hdfc'] but URL is 'hdfc-secure.net'.",
+        "\u2713 Suspicious URL path",
+        "\u2713 Suspicious URL keyword"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Phishing attempt. Use official app.",
+      "entities": {
+        "urls": [
+          "hdfc-secure.net/verify"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.647819995880127
+    },
+    {
+      "file": "comprehensive_scam_16.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Unknown",
+      "risk_score": 80,
+      "reasons": [
+        "\u2713 Short message with link (suspicious)",
+        "\u2713 Contains a link",
+        "\u2713 Layer 2: Brand keyword 'icici'",
+        "\u26a0 Mismatch: Text mentions ['icici'] but URL is 'icici-reactivate.com'."
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Confirmed scam pattern.",
+      "entities": {
+        "urls": [
+          "icici-reactivate.com/og.in"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.621980905532837
+    },
+    {
+      "file": "comprehensive_scam_17.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Phishing Scam",
+      "risk_score": 100,
+      "reasons": [
+        "\u2713 Short message with link (suspicious)",
+        "\u2713 Contains a link",
+        "\u2713 Layer 2: Brand keyword 'sbi'",
+        "\u26a0 Mismatch: Text mentions ['sbi'] but URL is 'sbi-update.net'.",
+        "\u2713 Suspicious URL path",
+        "\u2713 Suspicious URL keyword"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Phishing attempt. Use official app.",
+      "entities": {
+        "urls": [
+          "sbi-update.net/verify"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.6786718368530273
+    },
+    {
+      "file": "comprehensive_scam_18.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Unknown",
+      "risk_score": 95,
+      "reasons": [
+        "\u2713 Short message with link (suspicious)",
+        "\u2713 Contains a link",
+        "\u2713 Layer 2: Brand keyword 'hdfc'",
+        "\u26a0 Mismatch: Text mentions ['hdfc'] but URL is 'hdfc-card-verify.com'.",
+        "\u2713 Suspicious URL keyword"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Confirmed scam pattern.",
+      "entities": {
+        "urls": [
+          "hdfc-card-verify.com"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.5148656368255615
+    },
+    {
+      "file": "comprehensive_scam_19.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Unknown",
+      "risk_score": 80,
+      "reasons": [
+        "\u2713 Short message with link (suspicious)",
+        "\u2713 Contains a link",
+        "\u2713 Layer 2: Brand keyword 'axis'",
+        "\u26a0 Mismatch: Text mentions ['axis'] but URL is 'axis-unlock.net'."
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Confirmed scam pattern.",
+      "entities": {
+        "urls": [
+          "axis-unlock.net"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.5636932849884033
+    },
+    {
+      "file": "comprehensive_scam_20.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Unknown",
+      "risk_score": 40,
+      "reasons": [
+        "\u2713 Short message with link (suspicious)",
+        "\u2713 Contains a link",
+        "\u2713 Suspicious URL keyword"
+      ],
+      "recommendation": "Exercise caution. Verify using the official app.",
+      "entities": {
+        "urls": [
+          "bank-verify.in"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.3232436180114746
+    },
+    {
+      "file": "comprehensive_scam_21.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Courier Scam",
+      "risk_score": 75,
+      "reasons": [
+        "\ud83d\udea8 COURIER SCAM: Demands payment for held package",
+        "\u2713 Short message with link (suspicious)",
+        "\u2713 Contains a link"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Courier scam. Contact courier directly.",
+      "entities": {
+        "urls": [
+          "customs-duty.cc/pay"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.7775981426239014
+    },
+    {
+      "file": "comprehensive_scam_22.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Courier Scam",
+      "risk_score": 75,
+      "reasons": [
+        "\ud83d\udea8 COURIER SCAM: Demands payment for held package",
+        "\u2713 Short message with link (suspicious)",
+        "\u2713 Contains a link"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Courier scam. Contact courier directly.",
+      "entities": {
+        "urls": [
+          "fedex-customs.cc/pay"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.737077236175537
+    },
+    {
+      "file": "comprehensive_scam_23.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Courier Scam",
+      "risk_score": 60,
+      "reasons": [
+        "\ud83d\udea8 COURIER SCAM: Demands payment for held package",
+        "\u2713 Contains a link"
+      ],
+      "recommendation": "Exercise caution. Verify using the official app.",
+      "entities": {
+        "urls": [
+          "customs-hold.in/pay"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.1750400066375732
+    },
+    {
+      "file": "comprehensive_scam_24.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 No scam indicators"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3231916427612305
+    },
+    {
+      "file": "comprehensive_scam_25.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Courier Scam",
+      "risk_score": 100,
+      "reasons": [
+        "\ud83d\udea8 COURIER SCAM: Demands payment for held package",
+        "\u2713 Short message with link (suspicious)",
+        "\u2713 Contains a link",
+        "\u2713 Layer 2: High entropy"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Courier scam. Contact courier directly.",
+      "entities": {
+        "urls": [
+          "bluedart-customs.net"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.5921218395233154
+    },
+    {
+      "file": "comprehensive_scam_26.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Courier Scam",
+      "risk_score": 100,
+      "reasons": [
+        "\ud83d\udea8 COURIER SCAM: Demands payment for held package",
+        "\u2713 Short message with link (suspicious)",
+        "\u2713 Contains a link",
+        "\u2713 Layer 2: High entropy",
+        "\u2713 High-risk TLD"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Courier scam. Contact courier directly.",
+      "entities": {
+        "urls": [
+          "indiapost-cusfoms.xyz"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.5684287548065186
+    },
+    {
+      "file": "comprehensive_scam_27.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Phishing Scam",
+      "risk_score": 85,
+      "reasons": [
+        "\u2713 Short message with link (suspicious)",
+        "\u2713 Contains a link",
+        "\u2713 Suspicious URL path"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Phishing attempt. Use official app.",
+      "entities": {
+        "urls": [
+          "courier-stuck.cc/clear"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.798813581466675
+    },
+    {
+      "file": "comprehensive_scam_28.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Courier Scam",
+      "risk_score": 75,
+      "reasons": [
+        "\ud83d\udea8 COURIER SCAM: Demands payment for held package",
+        "\u2713 Short message with link (suspicious)",
+        "\u2713 Contains a link"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Courier scam. Contact courier directly.",
+      "entities": {
+        "urls": [
+          "customs-notice.in/pay"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.2747573852539062
+    },
+    {
+      "file": "comprehensive_scam_29.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 No scam indicators"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.331404685974121
+    },
+    {
+      "file": "comprehensive_scam_30.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Courier Scam",
+      "risk_score": 100,
+      "reasons": [
+        "\ud83d\udea8 COURIER SCAM: Demands payment for held package",
+        "\u2713 Short message with link (suspicious)",
+        "\u2713 Contains a link",
+        "\u2713 High-risk TLD"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Courier scam. Contact courier directly.",
+      "entities": {
+        "urls": [
+          "dtdc-clear.xyz"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 3.5976672172546387
+    },
+    {
+      "file": "comprehensive_scam_31.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Lottery Scam",
+      "risk_score": 100,
+      "reasons": [
+        "\ud83d\udea8 LOTTERY SCAM: Unsolicited prize demanding action",
+        "\u2713 Short message with link (suspicious)",
+        "\u2713 Contains a link",
+        "\u2713 Layer 2: Brand keyword 'paytm'",
+        "\u26a0 Mismatch: Text mentions ['paytm'] but URL is 'paytm-reward.xyz'.",
+        "\u2713 Suspicious URL path",
+        "\u2713 Suspicious URL keyword"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: LOTTERY SCAM. You can't win what you didn't enter.",
+      "entities": {
+        "urls": [
+          "paytm-reward.xyz/claim"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.636596202850342
+    },
+    {
+      "file": "comprehensive_scam_32.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Fake Receipt Scam",
+      "risk_score": 100,
+      "reasons": [
+        "\ud83d\udea8 FAKE RECEIPT: Says money received but demands action",
+        "\u2713 Short message with link (suspicious)",
+        "\u2713 Contains a link",
+        "\u2713 Layer 2: Brand keyword 'phonepe'",
+        "\u26a0 Mismatch: Text mentions ['phonepe'] but URL is 'phonepe-cashback.xyz'.",
+        "\u2713 High-risk TLD"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: FAKE RECEIPT. Legitimate receipts never ask for action.",
+      "entities": {
+        "urls": [
+          "phonepe-cashback.xyz"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.327193021774292
+    },
+    {
+      "file": "comprehensive_scam_33.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Phishing Scam",
+      "risk_score": 100,
+      "reasons": [
+        "\u2713 Short message with link (suspicious)",
+        "\u2713 Contains a link",
+        "\u2713 Layer 2: Brand keyword 'amazon'",
+        "\u26a0 Mismatch: Text mentions ['amazon'] but URL is 'amazon-reward.xyz'.",
+        "\u2713 Suspicious URL path",
+        "\u2713 Suspicious URL keyword"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Phishing attempt. Use official app.",
+      "entities": {
+        "urls": [
+          "amazon-reward.xyz/claim"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.8267107009887695
+    },
+    {
+      "file": "comprehensive_scam_34.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Lottery Scam",
+      "risk_score": 100,
+      "reasons": [
+        "\ud83d\udea8 LOTTERY SCAM: Unsolicited prize demanding action",
+        "\u2713 Short message with link (suspicious)",
+        "\u2713 Contains a link",
+        "\u2713 Layer 2: Brand keyword 'flipkart'",
+        "\u2713 High-risk TLD"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: LOTTERY SCAM. You can't win what you didn't enter.",
+      "entities": {
+        "urls": [
+          "flipkart-gift.xyz"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.72550892829895
+    },
+    {
+      "file": "comprehensive_scam_35.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 No scam indicators"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.2964951992034912
+    },
+    {
+      "file": "comprehensive_scam_36.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Fake Receipt Scam",
+      "risk_score": 75,
+      "reasons": [
+        "\ud83d\udea8 FAKE RECEIPT: Says money received but demands action",
+        "\u2713 Suspicious QR placeholder detected"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: FAKE RECEIPT. Legitimate receipts never ask for action.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3490805625915527
+    },
+    {
+      "file": "comprehensive_scam_37.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Fake Receipt Scam",
+      "risk_score": 75,
+      "reasons": [
+        "\ud83d\udea8 FAKE RECEIPT: Says money received but demands action",
+        "\u2713 Suspicious QR placeholder detected"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: FAKE RECEIPT. Legitimate receipts never ask for action.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3646154403686523
+    },
+    {
+      "file": "comprehensive_scam_38.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Likely Safe",
+      "risk_score": 25,
+      "reasons": [
+        "\u2713 Suspicious QR placeholder detected"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.378385543823242
+    },
+    {
+      "file": "comprehensive_scam_39.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Government Scam",
+      "risk_score": 50,
+      "reasons": [
+        "\ud83d\udea8 GOVERNMENT SCAM: Fake refund/verification demand"
+      ],
+      "recommendation": "Exercise caution. Verify using the official app.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.36348295211792
+    },
+    {
+      "file": "comprehensive_scam_40.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Fake Receipt Scam",
+      "risk_score": 75,
+      "reasons": [
+        "\ud83d\udea8 FAKE RECEIPT: Says money received but demands action",
+        "\u2713 Suspicious QR placeholder detected"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: FAKE RECEIPT. Legitimate receipts never ask for action.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3240792751312256
+    },
+    {
+      "file": "comprehensive_scam_41.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Phishing Scam",
+      "risk_score": 85,
+      "reasons": [
+        "\u2713 Short message with link (suspicious)",
+        "\u2713 Contains a link",
+        "\u2713 Layer 2: High entropy",
+        "\u2713 Suspicious URL path"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Phishing attempt. Use official app.",
+      "entities": {
+        "urls": [
+          "incometax-refund.ce/claim"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.433833360671997
+    },
+    {
+      "file": "comprehensive_scam_42.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Phishing Scam",
+      "risk_score": 85,
+      "reasons": [
+        "\u2713 Short message with link (suspicious)",
+        "\u2713 Contains a link",
+        "\u2713 Suspicious URL path",
+        "\u2713 Suspicious URL keyword"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Phishing attempt. Use official app.",
+      "entities": {
+        "urls": [
+          "epfo-claim.in/verify"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.540405035018921
+    },
+    {
+      "file": "comprehensive_scam_43.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Phishing Scam",
+      "risk_score": 100,
+      "reasons": [
+        "\ud83d\udea8 PHISHING: Demands verification via suspicious link",
+        "\u2713 Short message with link (suspicious)",
+        "\u2713 Contains a link",
+        "\u2713 Suspicious URL path",
+        "\u2713 Suspicious URL keyword"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Phishing attempt. Use official app.",
+      "entities": {
+        "urls": [
+          "pan-link-update.com/urgent"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.6929450035095215
+    },
+    {
+      "file": "comprehensive_scam_44.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Phishing Scam",
+      "risk_score": 100,
+      "reasons": [
+        "\ud83d\udea8 PHISHING: Demands verification via suspicious link",
+        "\u2713 Short message with link (suspicious)",
+        "\u2713 Contains a link",
+        "\u2713 High-risk TLD",
+        "\u2713 Suspicious URL keyword"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Phishing attempt. Use official app.",
+      "entities": {
+        "urls": [
+          "pan-update.xyz"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.714088201522827
+    },
+    {
+      "file": "comprehensive_scam_45.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 No scam indicators"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3298680782318115
+    },
+    {
+      "file": "comprehensive_scam_46.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Unknown",
+      "risk_score": 65,
+      "reasons": [
+        "\u2713 Short message with link (suspicious)",
+        "\u2713 Contains a link",
+        "\u2713 Layer 2: High entropy",
+        "\u2713 Suspicious URL keyword"
+      ],
+      "recommendation": "Exercise caution. Verify using the official app.",
+      "entities": {
+        "urls": [
+          "uan-verify-epfo.in"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.269212007522583
+    },
+    {
+      "file": "comprehensive_scam_47.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Phishing Scam",
+      "risk_score": 90,
+      "reasons": [
+        "\u2713 Short message with link (suspicious)",
+        "\u2713 Contains a link",
+        "\u2713 Layer 2: High entropy",
+        "\u2713 High-risk TLD",
+        "\u2713 Suspicious URL keyword"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Phishing attempt. Use official app.",
+      "entities": {
+        "urls": [
+          "govt-subsidy-claim.xyz"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 16.1932852268219
+    },
+    {
+      "file": "comprehensive_scam_48.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Unknown",
+      "risk_score": 65,
+      "reasons": [
+        "\u2713 Short message with link (suspicious)",
+        "\u2713 Contains a link",
+        "\u2713 Layer 2: High entropy",
+        "\u2713 Suspicious URL keyword"
+      ],
+      "recommendation": "Exercise caution. Verify using the official app.",
+      "entities": {
+        "urls": [
+          "aadhaar-verify-urgent.in"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.9123568534851074
+    },
+    {
+      "file": "comprehensive_scam_49.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Phishing Scam",
+      "risk_score": 35,
+      "reasons": [
+        "\ud83d\udea8 PHISHING: Demands verification via suspicious link"
+      ],
+      "recommendation": "Exercise caution. Verify using the official app.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 0.7939968109130859
+    },
+    {
+      "file": "comprehensive_scam_50.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Phishing Scam",
+      "risk_score": 85,
+      "reasons": [
+        "\u2713 Short message with link (suspicious)",
+        "\u2713 Contains a link",
+        "\u2713 High-risk TLD",
+        "\u2713 Suspicious URL keyword"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Phishing attempt. Use official app.",
+      "entities": {
+        "urls": [
+          "voter-id-verify.xyz"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.9384801387786865
+    },
+    {
+      "file": "comprehensive_scam_51.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "E-Challan Scam",
+      "risk_score": 50,
+      "reasons": [
+        "\ud83d\udea8 E-CHALLAN SCAM: Fake traffic fine demanding payment"
+      ],
+      "recommendation": "Exercise caution. Verify using the official app.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.5460238456726074
+    },
+    {
+      "file": "comprehensive_scam_52.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "E-Challan Scam",
+      "risk_score": 75,
+      "reasons": [
+        "\ud83d\udea8 E-CHALLAN SCAM: Fake traffic fine demanding payment",
+        "\u2713 Short message with link (suspicious)",
+        "\u2713 Contains a link"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: E-CHALLAN SCAM. Visit official police website.",
+      "entities": {
+        "urls": [
+          "traffic-challan.in/pay"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.2652690410614014
+    },
+    {
+      "file": "comprehensive_scam_53.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "E-Challan Scam",
+      "risk_score": 50,
+      "reasons": [
+        "\ud83d\udea8 E-CHALLAN SCAM: Fake traffic fine demanding payment"
+      ],
+      "recommendation": "Exercise caution. Verify using the official app.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3106334209442139
+    },
+    {
+      "file": "comprehensive_scam_54.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "E-Challan Scam",
+      "risk_score": 100,
+      "reasons": [
+        "\ud83d\udea8 E-CHALLAN SCAM: Fake traffic fine demanding payment",
+        "\u2713 Short message with link (suspicious)",
+        "\u2713 Contains a link",
+        "\u2713 High-risk TLD"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: E-CHALLAN SCAM. Visit official police website.",
+      "entities": {
+        "urls": [
+          "rto-fine-notice.xyz"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.6650047302246094
+    },
+    {
+      "file": "comprehensive_scam_55.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "E-Challan Scam",
+      "risk_score": 75,
+      "reasons": [
+        "\ud83d\udea8 E-CHALLAN SCAM: Fake traffic fine demanding payment",
+        "\u2713 Short message with link (suspicious)",
+        "\u2713 Contains a link"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: E-CHALLAN SCAM. Visit official police website.",
+      "entities": {
+        "urls": [
+          "e-challan-helmet.in"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.324064016342163
+    },
+    {
+      "file": "comprehensive_scam_56.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "E-Challan Scam",
+      "risk_score": 50,
+      "reasons": [
+        "\ud83d\udea8 E-CHALLAN SCAM: Fake traffic fine demanding payment"
+      ],
+      "recommendation": "Exercise caution. Verify using the official app.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3242180347442627
+    },
+    {
+      "file": "comprehensive_scam_57.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "E-Challan Scam",
+      "risk_score": 100,
+      "reasons": [
+        "\ud83d\udea8 E-CHALLAN SCAM: Fake traffic fine demanding payment",
+        "\u2713 Short message with link (suspicious)",
+        "\u2713 Contains a link",
+        "\u2713 High-risk TLD"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: E-CHALLAN SCAM. Visit official police website.",
+      "entities": {
+        "urls": [
+          "mumbai-traffic.xyz"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.7285313606262207
+    },
+    {
+      "file": "comprehensive_scam_58.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "E-Challan Scam",
+      "risk_score": 75,
+      "reasons": [
+        "\ud83d\udea8 E-CHALLAN SCAM: Fake traffic fine demanding payment",
+        "\u2713 Short message with link (suspicious)",
+        "\u2713 Contains a link"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: E-CHALLAN SCAM. Visit official police website.",
+      "entities": {
+        "urls": [
+          "di-suspended.in"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.2643344402313232
+    },
+    {
+      "file": "comprehensive_scam_59.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "E-Challan Scam",
+      "risk_score": 75,
+      "reasons": [
+        "\ud83d\udea8 E-CHALLAN SCAM: Fake traffic fine demanding payment",
+        "\u2713 Short message with link (suspicious)",
+        "\u2713 Contains a link"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: E-CHALLAN SCAM. Visit official police website.",
+      "entities": {
+        "urls": [
+          "rc-renewal.cc/pay"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.603773355484009
+    },
+    {
+      "file": "comprehensive_scam_60.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "E-Challan Scam",
+      "risk_score": 100,
+      "reasons": [
+        "\ud83d\udea8 E-CHALLAN SCAM: Fake traffic fine demanding payment",
+        "\u2713 Short message with link (suspicious)",
+        "\u2713 Contains a link",
+        "\u2713 High-risk TLD"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: E-CHALLAN SCAM. Visit official police website.",
+      "entities": {
+        "urls": [
+          "parking-challan.xyz"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.793280601501465
+    },
+    {
+      "file": "comprehensive_scam_61.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Utility Scam",
+      "risk_score": 50,
+      "reasons": [
+        "\ud83d\udea8 UTILITY SCAM: Fake disconnection threat demanding payment"
+      ],
+      "recommendation": "Exercise caution. Verify using the official app.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3054964542388916
+    },
+    {
+      "file": "comprehensive_scam_62.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Utility Scam",
+      "risk_score": 75,
+      "reasons": [
+        "\ud83d\udea8 UTILITY SCAM: Fake disconnection threat demanding payment",
+        "\u2713 Short message with link (suspicious)",
+        "\u2713 Contains a link"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: UTILITY SCAM. Contact official customer service.",
+      "entities": {
+        "urls": [
+          "power-cut-notice.in"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.378457546234131
+    },
+    {
+      "file": "comprehensive_scam_63.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Utility Scam",
+      "risk_score": 100,
+      "reasons": [
+        "\ud83d\udea8 UTILITY SCAM: Fake disconnection threat demanding payment",
+        "\u2713 Short message with link (suspicious)",
+        "\u2713 Contains a link",
+        "\u2713 High-risk TLD"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: UTILITY SCAM. Contact official customer service.",
+      "entities": {
+        "urls": [
+          "electricity-disconnect.xyz"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.5758578777313232
+    },
+    {
+      "file": "comprehensive_scam_64.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Utility Scam",
+      "risk_score": 50,
+      "reasons": [
+        "\ud83d\udea8 UTILITY SCAM: Fake disconnection threat demanding payment"
+      ],
+      "recommendation": "Exercise caution. Verify using the official app.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.301076889038086
+    },
+    {
+      "file": "comprehensive_scam_65.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Utility Scam",
+      "risk_score": 75,
+      "reasons": [
+        "\ud83d\udea8 UTILITY SCAM: Fake disconnection threat demanding payment",
+        "\u2713 Short message with link (suspicious)",
+        "\u2713 Contains a link"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: UTILITY SCAM. Contact official customer service.",
+      "entities": {
+        "urls": [
+          "water-bill-urgent.in"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.4009103775024414
+    },
+    {
+      "file": "comprehensive_scam_66.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Utility Scam",
+      "risk_score": 50,
+      "reasons": [
+        "\ud83d\udea8 UTILITY SCAM: Fake disconnection threat demanding payment"
+      ],
+      "recommendation": "Exercise caution. Verify using the official app.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3089098930358887
+    },
+    {
+      "file": "comprehensive_scam_67.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Utility Scam",
+      "risk_score": 100,
+      "reasons": [
+        "\ud83d\udea8 UTILITY SCAM: Fake disconnection threat demanding payment",
+        "\u2713 Short message with link (suspicious)",
+        "\u2713 Contains a link",
+        "\u2713 High-risk TLD"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: UTILITY SCAM. Contact official customer service.",
+      "entities": {
+        "urls": [
+          "mtnl-broadbill.xyz"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.7411112785339355
+    },
+    {
+      "file": "comprehensive_scam_68.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Unknown",
+      "risk_score": 50,
+      "reasons": [
+        "\u2713 Short message with link (suspicious)",
+        "\u2713 Contains a link",
+        "\u2713 Layer 2: High entropy"
+      ],
+      "recommendation": "Exercise caution. Verify using the official app.",
+      "entities": {
+        "urls": [
+          "mobile-recharge-urgent.in"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.298367738723755
+    },
+    {
+      "file": "comprehensive_scam_69.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Likely Safe",
+      "risk_score": 25,
+      "reasons": [
+        "\u2713 Short message with link (suspicious)",
+        "\u2713 Contains a link"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [
+          "dth-blocked.cc/pay"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.6730306148529053
+    },
+    {
+      "file": "comprehensive_scam_70.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Utility Scam",
+      "risk_score": 100,
+      "reasons": [
+        "\ud83d\udea8 UTILITY SCAM: Fake disconnection threat demanding payment",
+        "\u2713 Short message with link (suspicious)",
+        "\u2713 Contains a link",
+        "\u2713 High-risk TLD"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: UTILITY SCAM. Contact official customer service.",
+      "entities": {
+        "urls": [
+          "gas-suspended.xyz"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.7059950828552246
+    },
+    {
+      "file": "comprehensive_scam_71.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Job Scam",
+      "risk_score": 100,
+      "reasons": [
+        "\ud83d\udea8 JOB SCAM: Unrealistic earnings with registration demand",
+        "\u2713 Short message with link (suspicious)",
+        "\u2713 Contains a link",
+        "\u2713 High-risk TLD"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: JOB SCAM. Legitimate jobs don't ask for fees.",
+      "entities": {
+        "urls": [
+          "wfh-job.xyz"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.4206721782684326
+    },
+    {
+      "file": "comprehensive_scam_72.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Job Scam",
+      "risk_score": 50,
+      "reasons": [
+        "\ud83d\udea8 JOB SCAM: Unrealistic earnings with registration demand"
+      ],
+      "recommendation": "Exercise caution. Verify using the official app.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.274930477142334
+    },
+    {
+      "file": "comprehensive_scam_73.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Job Scam",
+      "risk_score": 75,
+      "reasons": [
+        "\ud83d\udea8 JOB SCAM: Unrealistic earnings with registration demand",
+        "\u2713 Short message with link (suspicious)",
+        "\u2713 Contains a link"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: JOB SCAM. Legitimate jobs don't ask for fees.",
+      "entities": {
+        "urls": [
+          "partti.me-job.in"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.43030047416687
+    },
+    {
+      "file": "comprehensive_scam_74.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Job Scam",
+      "risk_score": 100,
+      "reasons": [
+        "\ud83d\udea8 JOB SCAM: Unrealistic earnings with registration demand",
+        "\u2713 Short message with link (suspicious)",
+        "\u2713 Contains a link",
+        "\u2713 Layer 2: High entropy",
+        "\u2713 High-risk TLD"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: JOB SCAM. Legitimate jobs don't ask for fees.",
+      "entities": {
+        "urls": [
+          "typing-job-urgent.xyz"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.2643816471099854
+    },
+    {
+      "file": "comprehensive_scam_75.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Job Scam",
+      "risk_score": 50,
+      "reasons": [
+        "\ud83d\udea8 JOB SCAM: Unrealistic earnings with registration demand"
+      ],
+      "recommendation": "Exercise caution. Verify using the official app.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.323376178741455
+    },
+    {
+      "file": "comprehensive_scam_76.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Job Scam",
+      "risk_score": 100,
+      "reasons": [
+        "\ud83d\udea8 JOB SCAM: Unrealistic earnings with registration demand",
+        "\u2713 Short message with link (suspicious)",
+        "\u2713 Contains a link",
+        "\u2713 Layer 2: Brand keyword 'flipkart'",
+        "\u2713 Layer 2: High entropy"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: JOB SCAM. Legitimate jobs don't ask for fees.",
+      "entities": {
+        "urls": [
+          "flipkart-job-scam.in"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.6285479068756104
+    },
+    {
+      "file": "comprehensive_scam_77.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Phishing Scam",
+      "risk_score": 85,
+      "reasons": [
+        "\u2713 Short message with link (suspicious)",
+        "\u2713 Contains a link",
+        "\u2713 High-risk TLD"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Phishing attempt. Use official app.",
+      "entities": {
+        "urls": [
+          "govt-job-fake.xyz"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.689995288848877
+    },
+    {
+      "file": "comprehensive_scam_78.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 No scam indicators"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.2999143600463867
+    },
+    {
+      "file": "comprehensive_scam_79.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Job Scam",
+      "risk_score": 100,
+      "reasons": [
+        "\ud83d\udea8 JOB SCAM: Unrealistic earnings with registration demand",
+        "\u2713 Short message with link (suspicious)",
+        "\u2713 Contains a link",
+        "\u2713 High-risk TLD"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: JOB SCAM. Legitimate jobs don't ask for fees.",
+      "entities": {
+        "urls": [
+          "telecall-job.xyz"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.593520164489746
+    },
+    {
+      "file": "comprehensive_scam_80.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Unknown",
+      "risk_score": 50,
+      "reasons": [
+        "\u2713 Short message with link (suspicious)",
+        "\u2713 Contains a link",
+        "\u2713 Layer 2: High entropy"
+      ],
+      "recommendation": "Exercise caution. Verify using the official app.",
+      "entities": {
+        "urls": [
+          "writing-job-fake.in"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.329892158508301
+    }
+  ],
+  "legit_results": [
+    {
+      "file": "comprehensive_legit_01.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 No scam indicators"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3262643814086914
+    },
+    {
+      "file": "comprehensive_legit_02.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 No scam indicators"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3875024318695068
+    },
+    {
+      "file": "comprehensive_legit_03.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 No scam indicators"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3644866943359375
+    },
+    {
+      "file": "comprehensive_legit_04.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 No scam indicators"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3716001510620117
+    },
+    {
+      "file": "comprehensive_legit_05.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 No scam indicators"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3926680088043213
+    },
+    {
+      "file": "comprehensive_legit_06.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 No scam indicators"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3855040073394775
+    },
+    {
+      "file": "comprehensive_legit_07.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 No scam indicators"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3814764022827148
+    },
+    {
+      "file": "comprehensive_legit_08.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 Short message with link (suspicious)",
+        "\u2713 Contains a link",
+        "\u2713 Layer 1: Whitelist match (Safe)",
+        "\u2713 Cross-Check: 'hdfcbank.com' linked to 'HDFC'."
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [
+          "hdfcbank.com"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3490018844604492
+    },
+    {
+      "file": "comprehensive_legit_09.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 No scam indicators"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3651223182678223
+    },
+    {
+      "file": "comprehensive_legit_10.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 No scam indicators"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3541333675384521
+    },
+    {
+      "file": "comprehensive_legit_11.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 No scam indicators"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3638927936553955
+    },
+    {
+      "file": "comprehensive_legit_12.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 Short message with link (suspicious)",
+        "\u2713 Contains a link",
+        "\u2713 Layer 1: Whitelist match (Safe)",
+        "\u2713 Cross-Check: 'axisbank.com' linked to 'AXIS'."
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [
+          "axisbank.com"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3814573287963867
+    },
+    {
+      "file": "comprehensive_legit_13.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 No scam indicators"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.399320363998413
+    },
+    {
+      "file": "comprehensive_legit_14.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 Short message with link (suspicious)",
+        "\u2713 Contains a link",
+        "\u2713 Layer 1: Whitelist match (Safe)",
+        "\u2713 Cross-Check: 'hdfcbank.com' linked to 'HDFC'."
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [
+          "hdfcbank.com"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3821618556976318
+    },
+    {
+      "file": "comprehensive_legit_15.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 No scam indicators"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3822288513183594
+    },
+    {
+      "file": "comprehensive_legit_16.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 No scam indicators"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3631889820098877
+    },
+    {
+      "file": "comprehensive_legit_17.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 No scam indicators"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3758363723754883
+    },
+    {
+      "file": "comprehensive_legit_18.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 No scam indicators"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.4114701747894287
+    },
+    {
+      "file": "comprehensive_legit_19.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 No scam indicators"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3742001056671143
+    },
+    {
+      "file": "comprehensive_legit_20.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 No scam indicators"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3746042251586914
+    },
+    {
+      "file": "comprehensive_legit_21.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 No scam indicators"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3878943920135498
+    },
+    {
+      "file": "comprehensive_legit_22.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 No scam indicators"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3617150783538818
+    },
+    {
+      "file": "comprehensive_legit_23.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 No scam indicators"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3695213794708252
+    },
+    {
+      "file": "comprehensive_legit_24.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 No scam indicators"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.359285831451416
+    },
+    {
+      "file": "comprehensive_legit_25.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 No scam indicators"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.4050288200378418
+    },
+    {
+      "file": "comprehensive_legit_26.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 No scam indicators"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3820512294769287
+    },
+    {
+      "file": "comprehensive_legit_27.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 No scam indicators"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.341327428817749
+    },
+    {
+      "file": "comprehensive_legit_28.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 No scam indicators"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.4090619087219238
+    },
+    {
+      "file": "comprehensive_legit_29.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 No scam indicators"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3656280040740967
+    },
+    {
+      "file": "comprehensive_legit_30.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 No scam indicators"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3823657035827637
+    },
+    {
+      "file": "comprehensive_legit_31.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 No scam indicators"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3834459781646729
+    },
+    {
+      "file": "comprehensive_legit_32.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 No scam indicators"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3731613159179688
+    },
+    {
+      "file": "comprehensive_legit_33.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 No scam indicators"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3958394527435303
+    },
+    {
+      "file": "comprehensive_legit_34.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 No scam indicators"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3898043632507324
+    },
+    {
+      "file": "comprehensive_legit_35.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 No scam indicators"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.4135675430297852
+    },
+    {
+      "file": "comprehensive_legit_36.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 No scam indicators"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3665268421173096
+    },
+    {
+      "file": "comprehensive_legit_37.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 No scam indicators"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3579018115997314
+    },
+    {
+      "file": "comprehensive_legit_38.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 No scam indicators"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3507897853851318
+    },
+    {
+      "file": "comprehensive_legit_39.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 No scam indicators"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3659229278564453
+    },
+    {
+      "file": "comprehensive_legit_40.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 No scam indicators"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3770325183868408
+    },
+    {
+      "file": "comprehensive_legit_41.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Unknown",
+      "risk_score": 35,
+      "reasons": [
+        "\ud83d\udea8 Suspicious OTP request"
+      ],
+      "recommendation": "Exercise caution. Verify using the official app.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.4118447303771973
+    },
+    {
+      "file": "comprehensive_legit_42.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 No scam indicators"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.4006505012512207
+    },
+    {
+      "file": "comprehensive_legit_43.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 Short message with link (suspicious)",
+        "\u2713 Contains a link",
+        "\u2713 Layer 1: Whitelist match (Safe)",
+        "\u2713 Cross-Check: 'hdfcbank.com' linked to 'HDFC'."
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [
+          "hdfcbank.com"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.4053535461425781
+    },
+    {
+      "file": "comprehensive_legit_44.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Unknown",
+      "risk_score": 35,
+      "reasons": [
+        "\ud83d\udea8 Suspicious OTP request"
+      ],
+      "recommendation": "Exercise caution. Verify using the official app.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3751437664031982
+    },
+    {
+      "file": "comprehensive_legit_45.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 No scam indicators"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3880205154418945
+    },
+    {
+      "file": "comprehensive_legit_46.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Unknown",
+      "risk_score": 35,
+      "reasons": [
+        "\ud83d\udea8 Suspicious OTP request"
+      ],
+      "recommendation": "Exercise caution. Verify using the official app.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3752927780151367
+    },
+    {
+      "file": "comprehensive_legit_47.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 No scam indicators"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3799655437469482
+    },
+    {
+      "file": "comprehensive_legit_48.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 15,
+      "reasons": [
+        "\u2713 Short message with link (suspicious)",
+        "\u2713 Contains a link",
+        "\u2713 Layer 2: Brand keyword 'sbi'",
+        "\u2713 Cross-Check: 'onlinesbi.com' linked to 'SBI'."
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [
+          "onlinesbi.com"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 3.0784451961517334
+    },
+    {
+      "file": "comprehensive_legit_49.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 No scam indicators"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3243918418884277
+    },
+    {
+      "file": "comprehensive_legit_50.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 No scam indicators"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3635499477386475
+    },
+    {
+      "file": "comprehensive_legit_51.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 No scam indicators"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3691930770874023
+    },
+    {
+      "file": "comprehensive_legit_52.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 No scam indicators"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3839733600616455
+    },
+    {
+      "file": "comprehensive_legit_53.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 No scam indicators"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3560049533843994
+    },
+    {
+      "file": "comprehensive_legit_54.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 No scam indicators"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.4017541408538818
+    },
+    {
+      "file": "comprehensive_legit_55.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 No scam indicators"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3728446960449219
+    },
+    {
+      "file": "comprehensive_legit_56.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 No scam indicators"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.4337778091430664
+    },
+    {
+      "file": "comprehensive_legit_57.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 No scam indicators"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3759846687316895
+    },
+    {
+      "file": "comprehensive_legit_58.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 No scam indicators"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3721578121185303
+    },
+    {
+      "file": "comprehensive_legit_59.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 No scam indicators"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3655166625976562
+    },
+    {
+      "file": "comprehensive_legit_60.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 No scam indicators"
+      ],
+      "recommendation": "\u2705 This message appears safe.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3743536472320557
+    }
+  ]
+}

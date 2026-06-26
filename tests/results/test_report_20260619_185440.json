@@ -1,0 +1,1159 @@
+{
+  "test_run": {
+    "timestamp": "2026-06-19T18:54:40.931788",
+    "api_url": "http://127.0.0.1:8000/upload/",
+    "scam_dataset_size": 30,
+    "legit_dataset_size": 20
+  },
+  "metrics": {
+    "total_tests": 50,
+    "successful_tests": 50,
+    "failed_tests": 0,
+    "scam_total": 30,
+    "scam_detected": 3,
+    "scam_missed": 27,
+    "scam_avg_score": 26.67,
+    "legit_total": 20,
+    "legit_correct": 13,
+    "legit_flagged": 7,
+    "legit_avg_score": 13.0,
+    "accuracy": 32.0,
+    "precision": 30.0,
+    "recall": 10.0,
+    "f1_score": 15.0,
+    "avg_processing_time": 1.68
+  },
+  "scam_results": [
+    {
+      "file": "sms_spam_01.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Phishing Scam",
+      "risk_score": 95,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 75%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Authority impersonation ('ING')",
+        "\u2713 Contains a link",
+        "\u2713 Link contains a random hash path"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Do not click. This is a phishing attempt. Log in directly through your official bank app to check your account.",
+      "entities": {
+        "urls": [
+          "www.SMS.ac/u/hmmross"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 7.236117839813232
+    },
+    {
+      "file": "sms_spam_02.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Banking Scam",
+      "risk_score": 30,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 75%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Authority impersonation ('ING')"
+      ],
+      "recommendation": "Exercise caution. Do not click any links. Verify the message using the official app or website.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.5038838386535645
+    },
+    {
+      "file": "sms_spam_03.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Likely Safe",
+      "risk_score": 25,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 75%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Reward bait ('free')"
+      ],
+      "recommendation": "\u2705 This message appears safe. It looks like a standard bank notification or educational alert.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3450939655303955
+    },
+    {
+      "file": "sms_spam_04.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Likely Safe",
+      "risk_score": 25,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 75%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Reward bait ('claim')"
+      ],
+      "recommendation": "\u2705 This message appears safe. It looks like a standard bank notification or educational alert.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [
+          "08006344447"
+        ],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.532121181488037
+    },
+    {
+      "file": "sms_spam_05.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Likely Safe",
+      "risk_score": 25,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 100%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Reward bait ('free')"
+      ],
+      "recommendation": "\u2705 This message appears safe. It looks like a standard bank notification or educational alert.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.4333090782165527
+    },
+    {
+      "file": "sms_spam_06.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Banking Scam",
+      "risk_score": 30,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 75%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Authority impersonation ('ING')"
+      ],
+      "recommendation": "Exercise caution. Do not click any links. Verify the message using the official app or website.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [
+          "09058094599"
+        ],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3165724277496338
+    },
+    {
+      "file": "sms_spam_07.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Likely Safe",
+      "risk_score": 25,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 75%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Reward bait ('win')"
+      ],
+      "recommendation": "\u2705 This message appears safe. It looks like a standard bank notification or educational alert.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.4016335010528564
+    },
+    {
+      "file": "sms_spam_08.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Likely Safe",
+      "risk_score": 25,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 75%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Reward bait ('won')"
+      ],
+      "recommendation": "\u2705 This message appears safe. It looks like a standard bank notification or educational alert.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [
+          "08714712394"
+        ],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.2952325344085693
+    },
+    {
+      "file": "sms_spam_09.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Unknown",
+      "risk_score": 50,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 75%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Urgency/Action language ('update')",
+        "\u2713 Reward bait ('free')"
+      ],
+      "recommendation": "Exercise caution. Do not click any links. Verify the message using the official app or website.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [
+          "08002986906"
+        ],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.4673495292663574
+    },
+    {
+      "file": "sms_spam_10.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 75%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)"
+      ],
+      "recommendation": "\u2705 This message appears safe. It looks like a standard bank notification or educational alert.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.4737284183502197
+    },
+    {
+      "file": "sms_spam_11.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 75%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)"
+      ],
+      "recommendation": "\u2705 This message appears safe. It looks like a standard bank notification or educational alert.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 2.0009593963623047
+    },
+    {
+      "file": "sms_spam_12.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Banking Scam",
+      "risk_score": 30,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 75%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Authority impersonation ('ING')"
+      ],
+      "recommendation": "Exercise caution. Do not click any links. Verify the message using the official app or website.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [
+          "02073162414"
+        ],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.5046238899230957
+    },
+    {
+      "file": "sms_spam_13.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Banking Scam",
+      "risk_score": 80,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 75%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Urgency/Action language ('urgent')",
+        "\u2713 Reward bait ('won')",
+        "\u2713 Authority impersonation ('ING')"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Do not click. This is a phishing attempt. Log in directly through your official bank app to check your account.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [
+          "09066358361"
+        ],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.4278225898742676
+    },
+    {
+      "file": "sms_spam_14.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Likely Safe",
+      "risk_score": 15,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 75%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Contains a link"
+      ],
+      "recommendation": "\u2705 This message appears safe. It looks like a standard bank notification or educational alert.",
+      "entities": {
+        "urls": [
+          "www.areyouunique.co.uk"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 3.249816417694092
+    },
+    {
+      "file": "sms_spam_15.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Banking Scam",
+      "risk_score": 80,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 75%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Urgency/Action language ('urgent')",
+        "\u2713 Reward bait ('won')",
+        "\u2713 Authority impersonation ('ING')"
+      ],
+      "recommendation": "\ud83d\udea8 HIGH RISK: Do not click. This is a phishing attempt. Log in directly through your official bank app to check your account.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [
+          "09061701939"
+        ],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3122282028198242
+    },
+    {
+      "file": "sms_spam_16.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 75%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)"
+      ],
+      "recommendation": "\u2705 This message appears safe. It looks like a standard bank notification or educational alert.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [
+          "08718711108"
+        ],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.2014000415802002
+    },
+    {
+      "file": "sms_spam_17.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Likely Safe",
+      "risk_score": 25,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 75%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Reward bait ('free')"
+      ],
+      "recommendation": "\u2705 This message appears safe. It looks like a standard bank notification or educational alert.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.5011565685272217
+    },
+    {
+      "file": "sms_spam_18.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Likely Safe",
+      "risk_score": 15,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 75%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Contains a link"
+      ],
+      "recommendation": "\u2705 This message appears safe. It looks like a standard bank notification or educational alert.",
+      "entities": {
+        "urls": [
+          "mobsi.com"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 3.8296942710876465
+    },
+    {
+      "file": "sms_spam_19.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 75%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)"
+      ],
+      "recommendation": "\u2705 This message appears safe. It looks like a standard bank notification or educational alert.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [
+          "09061743806"
+        ],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.161592721939087
+    },
+    {
+      "file": "sms_spam_20.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Likely Safe",
+      "risk_score": 25,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 75%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Reward bait ('free')"
+      ],
+      "recommendation": "\u2705 This message appears safe. It looks like a standard bank notification or educational alert.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.1531338691711426
+    },
+    {
+      "file": "sms_spam_21.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Likely Safe",
+      "risk_score": 25,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 75%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Reward bait ('claim')"
+      ],
+      "recommendation": "\u2705 This message appears safe. It looks like a standard bank notification or educational alert.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [
+          "0871277810810"
+        ],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.4587717056274414
+    },
+    {
+      "file": "sms_spam_22.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Banking Scam",
+      "risk_score": 55,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 75%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Reward bait ('win')",
+        "\u2713 Authority impersonation ('ING')"
+      ],
+      "recommendation": "Exercise caution. Do not click any links. Verify the message using the official app or website.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.2815580368041992
+    },
+    {
+      "file": "sms_spam_23.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 75%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)"
+      ],
+      "recommendation": "\u2705 This message appears safe. It looks like a standard bank notification or educational alert.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.669753074645996
+    },
+    {
+      "file": "sms_spam_24.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Unknown",
+      "risk_score": 40,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 75%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Reward bait ('free')",
+        "\u2713 Contains a link"
+      ],
+      "recommendation": "Exercise caution. Do not click any links. Verify the message using the official app or website.",
+      "entities": {
+        "urls": [
+          "notxt.co.uk"
+        ],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 3.5737643241882324
+    },
+    {
+      "file": "sms_spam_25.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Likely Safe",
+      "risk_score": 25,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 75%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Reward bait ('claim')"
+      ],
+      "recommendation": "\u2705 This message appears safe. It looks like a standard bank notification or educational alert.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [
+          "08006344447"
+        ],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.1082115173339844
+    },
+    {
+      "file": "sms_spam_26.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 75%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)"
+      ],
+      "recommendation": "\u2705 This message appears safe. It looks like a standard bank notification or educational alert.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [
+          "09095350301",
+          "08712460324"
+        ],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.2855045795440674
+    },
+    {
+      "file": "sms_spam_27.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Banking Scam",
+      "risk_score": 55,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 75%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Reward bait ('claim')",
+        "\u2713 Authority impersonation ('ING')"
+      ],
+      "recommendation": "Exercise caution. Do not click any links. Verify the message using the official app or website.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [
+          "08081560665",
+          "07786200117"
+        ],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.5970344543457031
+    },
+    {
+      "file": "sms_spam_28.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 75%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)"
+      ],
+      "recommendation": "\u2705 This message appears safe. It looks like a standard bank notification or educational alert.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.892421007156372
+    },
+    {
+      "file": "sms_spam_29.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 75%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)"
+      ],
+      "recommendation": "\u2705 This message appears safe. It looks like a standard bank notification or educational alert.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [
+          "09099726553"
+        ],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.5915021896362305
+    },
+    {
+      "file": "sms_spam_30.png",
+      "status": "SUCCESS",
+      "expected": "scam",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 75%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Safe indicator found ('received')"
+      ],
+      "recommendation": "\u2705 This message appears safe. It looks like a standard bank notification or educational alert.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3381092548370361
+    }
+  ],
+  "legit_results": [
+    {
+      "file": "sms_legit_01.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Banking Scam",
+      "risk_score": 30,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 75%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Authority impersonation ('ING')"
+      ],
+      "recommendation": "Exercise caution. Do not click any links. Verify the message using the official app or website.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.4922924041748047
+    },
+    {
+      "file": "sms_legit_02.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Unknown",
+      "risk_score": 30,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 75%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Authority impersonation ('IRS')"
+      ],
+      "recommendation": "Exercise caution. Do not click any links. Verify the message using the official app or website.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.5390772819519043
+    },
+    {
+      "file": "sms_legit_03.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 25,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 75%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Reward bait ('won')"
+      ],
+      "recommendation": "\u2705 This message appears safe. It looks like a standard bank notification or educational alert.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.465789794921875
+    },
+    {
+      "file": "sms_legit_04.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 75%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)"
+      ],
+      "recommendation": "\u2705 This message appears safe. It looks like a standard bank notification or educational alert.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3067739009857178
+    },
+    {
+      "file": "sms_legit_05.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 75%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)"
+      ],
+      "recommendation": "\u2705 This message appears safe. It looks like a standard bank notification or educational alert.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3991203308105469
+    },
+    {
+      "file": "sms_legit_06.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 75%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)"
+      ],
+      "recommendation": "\u2705 This message appears safe. It looks like a standard bank notification or educational alert.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.407578945159912
+    },
+    {
+      "file": "sms_legit_07.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Banking Scam",
+      "risk_score": 30,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 75%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Authority impersonation ('ING')"
+      ],
+      "recommendation": "Exercise caution. Do not click any links. Verify the message using the official app or website.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.8398561477661133
+    },
+    {
+      "file": "sms_legit_08.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 75%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)"
+      ],
+      "recommendation": "\u2705 This message appears safe. It looks like a standard bank notification or educational alert.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3037314414978027
+    },
+    {
+      "file": "sms_legit_09.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 75%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)"
+      ],
+      "recommendation": "\u2705 This message appears safe. It looks like a standard bank notification or educational alert.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.2949810028076172
+    },
+    {
+      "file": "sms_legit_10.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 75%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)"
+      ],
+      "recommendation": "\u2705 This message appears safe. It looks like a standard bank notification or educational alert.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.4802675247192383
+    },
+    {
+      "file": "sms_legit_11.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Banking Scam",
+      "risk_score": 30,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 75%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Authority impersonation ('ING')"
+      ],
+      "recommendation": "Exercise caution. Do not click any links. Verify the message using the official app or website.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.6670160293579102
+    },
+    {
+      "file": "sms_legit_12.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 75%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)"
+      ],
+      "recommendation": "\u2705 This message appears safe. It looks like a standard bank notification or educational alert.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.2145113945007324
+    },
+    {
+      "file": "sms_legit_13.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 75%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)"
+      ],
+      "recommendation": "\u2705 This message appears safe. It looks like a standard bank notification or educational alert.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.5426101684570312
+    },
+    {
+      "file": "sms_legit_14.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 75%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)"
+      ],
+      "recommendation": "\u2705 This message appears safe. It looks like a standard bank notification or educational alert.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3357014656066895
+    },
+    {
+      "file": "sms_legit_15.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 75%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)"
+      ],
+      "recommendation": "\u2705 This message appears safe. It looks like a standard bank notification or educational alert.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.3065094947814941
+    },
+    {
+      "file": "sms_legit_16.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Banking Scam",
+      "risk_score": 30,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 75%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Authority impersonation ('ING')"
+      ],
+      "recommendation": "Exercise caution. Do not click any links. Verify the message using the official app or website.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.4244425296783447
+    },
+    {
+      "file": "sms_legit_17.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Banking Scam",
+      "risk_score": 30,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 75%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Authority impersonation ('ING')"
+      ],
+      "recommendation": "Exercise caution. Do not click any links. Verify the message using the official app or website.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.1379225254058838
+    },
+    {
+      "file": "sms_legit_18.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Banking Scam",
+      "risk_score": 30,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 75%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Authority impersonation ('ING')"
+      ],
+      "recommendation": "Exercise caution. Do not click any links. Verify the message using the official app or website.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.532548189163208
+    },
+    {
+      "file": "sms_legit_19.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 25,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 75%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)",
+        "\u2713 Reward bait ('win')"
+      ],
+      "recommendation": "\u2705 This message appears safe. It looks like a standard bank notification or educational alert.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.2394990921020508
+    },
+    {
+      "file": "sms_legit_20.png",
+      "status": "SUCCESS",
+      "expected": "legitimate",
+      "predicted": "Likely Safe",
+      "risk_score": 0,
+      "reasons": [
+        "\u2713 High image authenticity (65%)",
+        "\u2713 \u2713 Professional color palette detected (Harmony: 75%)",
+        "\u2713 \u26a0 Image shows signs of 4x recompression (re-shared 3 times)"
+      ],
+      "recommendation": "\u2705 This message appears safe. It looks like a standard bank notification or educational alert.",
+      "entities": {
+        "urls": [],
+        "phone_numbers": [],
+        "upi_ids": []
+      },
+      "qr_count": 0,
+      "user_blur_count": 0,
+      "time": 1.8723175525665283
+    }
+  ]
+}
